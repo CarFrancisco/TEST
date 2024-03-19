@@ -6,7 +6,7 @@ _EN=Variables
 ++D=TON	N=S5_Wait	G=VAR
 ++D=BOOL	N=T_2s	G=VAR
 +GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
-++D=THE\BUZZER	N=Buzzer	Ord=0	G=VAR_IN_OUT	Com=Buzzer object
+++D=THE\BUZZER	N=myBuzzer	Ord=0	G=VAR_IN_OUT	Com=Buzzer object
 ++D=BOOL	N=Enabled	Ord=1	G=VAR_INPUT	Com=Enable buzzer
 ++D=BOOL	N=Commisssoning	Ord=2	G=VAR_INPUT
 ++D=BOOL	N=Output	Ord=3	G=VAR_OUTPUT

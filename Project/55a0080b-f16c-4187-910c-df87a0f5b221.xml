@@ -11,7 +11,7 @@ _EN=Variables
 ++D=BOOL	N=Limit_Used	G=VAR	Com=Limit function is used
 +GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
 ++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT	Com=Sensor is used on machine
-++D=THE\SENSOR	N=MySensor	Ord=1	G=VAR_IN_OUT
+++D=THE\SENSOR	N=mySensor	Ord=1	G=VAR_IN_OUT
 ++D=INT	N=Sensor_Integer	IV=-9999	Ord=2	G=VAR_INPUT	Com=Analog sensor input (from integer)
 ++D=ARRAY[0..1] OF BYTE	N=Sensor_Array	Ord=3	G=VAR_INPUT	Com=Analog sensor input (from array)
 ++D=BOOL	N=Enabled	Ord=4	G=VAR_INPUT	Com=Use sensor on the machines

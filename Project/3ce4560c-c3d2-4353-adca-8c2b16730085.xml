@@ -1,8 +1,19 @@
 [SLWD version=1.0]
 _EN=Variables
 +GN=VAR	GVT=DefaultGroup
-++D=BOOL	N=DO_Buzzer	G=VAR	Com=Digital ouptut of sensor
+++D=BOOL	N=DO_Buzzer	G=VAR	Com=Digital ouptut of buzzer
 ++D=Buzzer_Config	N=Config_Buzzer	G=VAR
+++D=BOOL	N=ES	G=VAR
+++D=BOOL	N=Prod_Alarm	G=VAR
+++D=Buzzer_Continus	N=ES_Buzzer	G=VAR
+++D=Buzzer_1s	N=ProdAlarm_Buzzer	G=VAR
+++D=BOOL	N=ATH_Closing	G=VAR
+++D=REAL	N=Accu_Position	G=VAR	Com=[0..100%]
+++D=TimeProportionalOut	N=PWM	G=VAR
+++D=BOOL	N=PWM_Sound	G=VAR	Com=Sound effect
+++D=Buzzer_External	N=Closing_Buzzer	G=VAR
+++D=Buzzer_Config_OnHMI	N=BuzzerToHMI	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=THE\BUZZER	N=Buzzer	G=VAR_EXTERNAL
 ++D=BOOL	N=Commissioning	G=VAR_EXTERNAL
+++D=THE\SCREEN	N=HMI	G=VAR_EXTERNAL

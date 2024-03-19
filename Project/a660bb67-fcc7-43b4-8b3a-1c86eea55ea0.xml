@@ -6,7 +6,7 @@ _EN=Variables
 ++D=BOOL	N=Buzzer_Run	G=VAR	Com=The buzzer mode is running for this sensor
 +GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
 ++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT	Com=Sensor is used on machine
-++D=THE\SENSOR	N=MySensor	Ord=1	G=VAR_IN_OUT	Com=Sensor object
-++D=THE\BUZZER	N=MyBuzzer	Ord=2	G=VAR_IN_OUT	Com=Buzzer object
+++D=THE\SENSOR	N=mySensor	Ord=1	G=VAR_IN_OUT	Com=Sensor object
+++D=THE\BUZZER	N=myBuzzer	Ord=2	G=VAR_IN_OUT	Com=Buzzer object
 ++D=BOOL	N=Enabled	Ord=3	G=VAR_INPUT	Com=Link a sensor to a buzzer
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

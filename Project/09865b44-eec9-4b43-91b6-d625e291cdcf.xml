@@ -5,7 +5,7 @@ _EN=Variables
 ++D=TON	N=TimeOff	G=VAR
 +GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
 ++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
-++D=THE\SENSOR	N=MySensor	Ord=1	G=VAR_IN_OUT
+++D=THE\SENSOR	N=mySensor	Ord=1	G=VAR_IN_OUT
 ++D=BOOL	N=Enabled	Ord=2	G=VAR_INPUT	Com=Sensor is used on the machines
 ++D=BOOL	N=Input	Ord=3	G=VAR_INPUT	Com=Sensor input
 ++D=TIME	N=TimeDetection	Ord=4	G=VAR_INPUT	Com=Time of detection for define state

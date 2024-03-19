@@ -1,0 +1,14 @@
+<CodeEditorModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.DeviceHmi.CodeEditor.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><CodingLanguageName>VBNET</CodingLanguageName><HiddenFooter>&#xD;
+End Module</HiddenFooter><HiddenHeader>Public Module S_Log&#xD;
+</HiddenHeader><SerialData/><SerialDeviceHmiId/><SerialScaleData/><Text>'Add global subroutines&#xD;
+&#xD;
+#Region "System"&#xD;
+Public Sub SystemIsStarting()&#xD;
+	'Call EventLog("System is starting ----")&#xD;
+End Sub  &#xD;
+&#xD;
+Public Sub SystemIsShuttingDown()&#xD;
+	'Call EventLog("System is shuting down...")&#xD;
+End Sub  &#xD;
+#End Region &#xD;
+</Text></CodeEditorModel>

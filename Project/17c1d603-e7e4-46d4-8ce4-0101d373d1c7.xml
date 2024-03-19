@@ -5,7 +5,7 @@ _EN=Variables
 ++D=BOOL	N=Cmd	G=VAR	Com=Local command
 +GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
 ++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
-++D=THE\BUZZER	N=Buzzer	Ord=1	G=VAR_IN_OUT	Com=Object of buzzer
+++D=THE\BUZZER	N=myBuzzer	Ord=1	G=VAR_IN_OUT	Com=Object of buzzer
 ++D=BOOL	N=Active	Ord=2	G=VAR_INPUT	Com=Order to start the buzzer
 ++D=SINT	N=Rank	IV=110	Ord=3	G=VAR_INPUT	Com=Priotity of order (Priority on low number)
 ++D=BOOL	N=Sound	Ord=4	G=VAR_INPUT	Com=Sound shape to play

@@ -3,7 +3,7 @@ _EN=Variables
 +GN=VAR	GVT=DefaultGroup
 +GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
 ++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
-++D=THE\BUZZER	N=Buzzer	Ord=1	G=VAR_IN_OUT	Com=Buzzer object
-++D=THE\SCREEN	N=Screen	Ord=2	G=VAR_IN_OUT	Com=Buzzer object
+++D=THE\BUZZER	N=myBuzzer	Ord=1	G=VAR_IN_OUT	Com=Buzzer object
+++D=THE\SCREEN	N=myScreen	Ord=2	G=VAR_IN_OUT	Com=Buzzer object
 ++D=BOOL	N=Enabled	Ord=3	G=VAR_INPUT	Com=Enable buzzer
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

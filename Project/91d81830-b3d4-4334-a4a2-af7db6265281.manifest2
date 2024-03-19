@@ -3,6 +3,8 @@
   <Application applicationName="sysmac" applicationVersion="Infinity" />
   <Solution solutionName="THE_FB" id="91d81830-b3d4-4334-a4a2-af7db6265281" trackingId="1313577e-b7f2-4f49-b36a-459e2f04b5c6" solutionSchemaVersion="2">
     <ApplicationFeatures>
+      <ApplicationFeature name="HMI" />
+      <ApplicationFeature name="NA5-15W101☐-V1Version:1.17" />
       <ApplicationFeature name="V102Project" />
       <ApplicationFeature name="SetUnit NX102-9000 Ver. 1.61" />
       <ApplicationFeature name="NexLibraryInternalUsed" />

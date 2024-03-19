@@ -10,9 +10,8 @@ _EN=Variables
 ++D=BOOL	N=T_200ms	G=VAR_GLOBAL	Com=Flag 200ms
 ++D=_sAXIS_REF	N=Axis_Wheel	AT=MC://_MC_AX[0]	RO=1	Const=1	G=VAR_GLOBAL
 ++D=_sAXIS_REF	N=Axis_Linear	AT=MC://_MC_AX[1]	RO=1	Const=1	G=VAR_GLOBAL
-++D=THE\TIMESTAMP	N=TS_Device_1	G=VAR_GLOBAL	Com=Fist device - 1 output
-++D=THE\TIMESTAMP	N=TS_Device_2	G=VAR_GLOBAL	Com=Second device - 2 outputs
 ++D=THE\BUZZER	N=Buzzer	R=1	G=VAR_GLOBAL
+++D=THE\SCREEN	N=HMI	R=1	G=VAR_GLOBAL	Com=Link between PLC and NA
 ++D=THE\INVERTER	N=Inv_M40_Motor	G=VAR_GLOBAL	Com=Second device - 2 outputs
 ++D=THE\PROD	N=Prod	R=1	G=VAR_GLOBAL
 ++D=THE\SENSOR	N=Sensor_1	G=VAR_GLOBAL	Com=Sensor object 1
@@ -25,6 +24,8 @@ _EN=Variables
 ++D=THE\PNEUMATIC	N=Pneu_Cylinder_1	G=VAR_GLOBAL	Com=Cylinder object 1
 ++D=THE\PNEUMATIC	N=Pneu_Cylinder_2	G=VAR_GLOBAL	Com=Cylinder object 2
 ++D=THE\PNEUMATIC	N=Pneu_Cylinder_3	G=VAR_GLOBAL	Com=Cylinder object 3
+++D=THE\TIMESTAMP	N=TS_Device_1	G=VAR_GLOBAL	Com=Fist device - 1 output
+++D=THE\TIMESTAMP	N=TS_Device_2	G=VAR_GLOBAL	Com=Second device - 2 outputs
 ++D=ARRAY[0..110] OF _sMC_CAM_REF	N=Cam_Traversing	IV=None	RO=1	G=VAR_GLOBAL
 ++D=EXU_Machines	N=M40	R=1	G=VAR_GLOBAL	Com=An extruder
 ++D=Sys_S_Structure	N=M50_S	AT=%E0_2152	R=1	NTP=PublicationInput	G=VAR_GLOBAL	Com=Received status from sysmetric M50 - FINS
