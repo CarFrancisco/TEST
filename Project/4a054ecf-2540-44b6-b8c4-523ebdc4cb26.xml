@@ -2,7 +2,7 @@
 _EN=Variables
 +GN=VAR	GVT=DefaultGroup
 +GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
-++D=THE\FORCE	N=Force_Sensor	Ord=0	G=VAR_IN_OUT
+++D=THE\FORCE	N=myForce	Ord=0	G=VAR_IN_OUT	Com=Load cell object
 ++D=WORD	N=Command	Ord=1	G=VAR_OUTPUT	Com=Calibration command
 ++D=UINT	N=Command_SID	Ord=2	G=VAR_OUTPUT	Com=Calibration command SID
 ++D=REAL	N=Data	Ord=3	G=VAR_OUTPUT	Com=Calibration data

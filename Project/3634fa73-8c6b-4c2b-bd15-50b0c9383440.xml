@@ -3,6 +3,7 @@ _EN=Variables
 +GN=VAR_GLOBAL	GVT=GlobalNamespaceGroup
 ++D=BOOL	N=Info_General	G=VAR_GLOBAL	Com=Rung with general information about an object
 ++D=BOOL	N=Info_Struct	G=VAR_GLOBAL	Com=Rung with information on object structure
+++D=BOOL	N=Info_IOmap	G=VAR_GLOBAL	Com=Information about I/O map
 ++D=BOOL	N=Info_ToDo	G=VAR_GLOBAL	Com=To do....
 ++D=BOOL	N=Commissioning	G=VAR_GLOBAL	Com=Commissioning order
 ++D=BOOL	N=T_100ms	G=VAR_GLOBAL	Com=Flag 100ms
@@ -69,3 +70,20 @@ _EN=Variables
 ++D=WORD	N=Serial_Output_Data_Type	AT=IOBus://unit#3/Ch1 Output Data Type	G=VAR_GLOBAL
 ++D=USINT	N=Serial_Output_SID	AT=IOBus://unit#3/Ch1 Output SID	G=VAR_GLOBAL
 ++D=USINT	N=Serial_Output_SID_Response	AT=IOBus://unit#3/Ch1 Output SID Response	G=VAR_GLOBAL
+++D=WORD	N=Force_DetectionSta	AT=IOBus://unit#4/Ch1 Detection Status	G=VAR_GLOBAL	Com=Detection status
+++D=WORD	N=Force_ExecutingSta	AT=IOBus://unit#4/Ch1 Executing Status	G=VAR_GLOBAL	Com=Execution status
+++D=REAL	N=Force_Data	AT=IOBus://unit#4/Ch1 Calibration Data	G=VAR_GLOBAL	Com=Calibration data
+++D=REAL	N=Force_Mesure	AT=IOBus://unit#4/Ch1 Gross Weight Value/Force Measurement Value REAL	G=VAR_GLOBAL	Com=Mesure [N]
+++D=UINT	N=Force_Response_SID	AT=IOBus://unit#4/Ch1 Calibration Command Response SID	G=VAR_GLOBAL	Com=Calibration command response SID
+++D=BOOL	N=Force_Ch1_Sensor_Disconnection_Test_Execution	AT=IOBus://unit#4/Ch1 Operation Command/Ch1 Sensor Disconnection Test Execution	G=VAR_GLOBAL
+++D=BOOL	N=Force_Ch1_Input_Value_Refreshing_Stop	AT=IOBus://unit#4/Ch1 Operation Command/Ch1 Input Value Refreshing Stop	G=VAR_GLOBAL
+++D=BOOL	N=Force_Ch1_Digital_Low_pass_Filter_Disable	AT=IOBus://unit#4/Ch1 Operation Command/Ch1 Digital Low-pass Filter Disable	G=VAR_GLOBAL
+++D=BOOL	N=Force_Ch1_Moving_Average_Filter_1_Disable	AT=IOBus://unit#4/Ch1 Operation Command/Ch1 Moving Average Filter 1 Disable	G=VAR_GLOBAL
+++D=BOOL	N=Force_Ch1_Moving_Average_Filter_2_Disable	AT=IOBus://unit#4/Ch1 Operation Command/Ch1 Moving Average Filter 2 Disable	G=VAR_GLOBAL
+++D=BOOL	N=Force_Ch1_Hold_Execution	AT=IOBus://unit#4/Ch1 Operation Command/Ch1 Hold Execution	G=VAR_GLOBAL
+++D=BOOL	N=Force_Ch1_Zero_Set_Execution	AT=IOBus://unit#4/Ch1 Operation Command/Ch1 Zero Set Execution	G=VAR_GLOBAL
+++D=BOOL	N=Force_Ch1_One_touch_Tare_Subtraction_Execution	AT=IOBus://unit#4/Ch1 Operation Command/Ch1 One-touch Tare Subtraction Execution	G=VAR_GLOBAL
+++D=BOOL	N=Force_Ch1_Data_Trace_Execution	AT=IOBus://unit#4/Ch1 Operation Command/Ch1 Data Trace Execution	G=VAR_GLOBAL
+++D=BOOL	N=Force_Ch1_Hold_Value_Clear	AT=IOBus://unit#4/Ch1 Operation Command/Ch1 Hold Value Clear	G=VAR_GLOBAL
+++D=UINT	N=Force_Command_SID	AT=IOBus://unit#4/Ch1 Calibration Command SID	G=VAR_GLOBAL	Com=Calibration command SID
+++D=WORD	N=Force_Command	AT=IOBus://unit#4/Ch1 Calibration Command	G=VAR_GLOBAL	Com=Calibration command

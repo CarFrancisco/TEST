@@ -13,6 +13,7 @@ _EN=Variables
 ++D=Sensor_Simple_WithBuzzer	N=Config_SimpleWithBuzzer	G=VAR
 ++D=BOOL	N=DI_Sensor_5	G=VAR
 ++D=Sensor_WithBuzzer	N=Sensor2ToBuzzer	G=VAR
+++D=Sensor_Force	N=Config_Loadcell	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=BOOL	N=Info_General	G=VAR_EXTERNAL
 ++D=THE\SENSOR	N=Sensor_1	G=VAR_EXTERNAL
@@ -24,3 +25,11 @@ _EN=Variables
 ++D=BOOL	N=Commissioning	G=VAR_EXTERNAL
 ++D=THE\SENSOR	N=Sensor_5	G=VAR_EXTERNAL
 ++D=THE\BUZZER	N=Buzzer	G=VAR_EXTERNAL
+++D=BOOL	N=Info_IOmap	G=VAR_EXTERNAL
+++D=WORD	N=Force_DetectionSta	G=VAR_EXTERNAL
+++D=THE\FORCE	N=Force_LoadCell	G=VAR_EXTERNAL
+++D=REAL	N=Force_Mesure	G=VAR_EXTERNAL
+++D=UINT	N=Force_Response_SID	G=VAR_EXTERNAL
+++D=WORD	N=Force_Command	G=VAR_EXTERNAL
+++D=UINT	N=Force_Command_SID	G=VAR_EXTERNAL
+++D=REAL	N=Force_Data	G=VAR_EXTERNAL
