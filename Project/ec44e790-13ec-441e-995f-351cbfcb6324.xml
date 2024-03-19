@@ -1,0 +1,10 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=ReceiveOrder	G=VAR
+++D=TON	N=TimeOut	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=THE\LASER	N=MyLaser	Ord=0	G=VAR_IN_OUT
+++D=BOOL	N=Stop	Ord=1	G=VAR_INPUT	Com=Order to stop shoot (on Flank)
+++D=BOOL	N=NotShooting	Ord=2	G=VAR_OUTPUT	Com=Is not shooting (Order received and laser is working)
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

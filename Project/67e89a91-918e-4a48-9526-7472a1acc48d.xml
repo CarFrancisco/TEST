@@ -1,0 +1,17 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=MC_Stop	N=Stop	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=_sAXIS_REF	N=Axis	Ord=0	Const=1	G=VAR_IN_OUT
+++D=BOOL	N=Execute	IV=False	Ord=1	G=VAR_INPUT	Com=The instruction is executed when the value of this variable changes to TRUE
+++D=LREAL	N=Deceleration	IV=0	Ord=2	G=VAR_INPUT	Com=Specify the behavior when executing more than one motion instruction.
+++D=LREAL	N=Jerk	IV=0	Ord=3	G=VAR_INPUT	Com=Specify the jerk. The unit is command units/s2
+++D=_eMC_BUFFER_MODE	N=BufferMode	IV=_mcAborting	Ord=4	G=VAR_INPUT	Com=Specify the deceleration rate. The unit is command units/s2
+++D=BOOL	N=Done	Ord=5	G=VAR_OUTPUT	Com=TRUE when the instruction is completed.
+++D=BOOL	N=Busy	Ord=6	G=VAR_OUTPUT	Com=TRUE when the instruction is acknowledged.
+++D=BOOL	N=Active	Ord=7	G=VAR_OUTPUT	Com=TRUE when the axis is being controlled.
+++D=BOOL	N=CommandAborted	Ord=8	G=VAR_OUTPUT	Com=TRUE when the instruction is aborted.
+++D=BOOL	N=ErrorActive	Ord=9	G=VAR_OUTPUT	Com=TRUE while there is an error.
+++D=WORD	N=ErrorID	Ord=10	G=VAR_OUTPUT	Com=Contains the error code when an error occurs. A value of 16#0000 indicates normal execution.
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

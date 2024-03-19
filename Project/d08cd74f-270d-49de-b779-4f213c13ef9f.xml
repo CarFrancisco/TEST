@@ -1,0 +1,11 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=THE\TIME_COUNTER	N=Counter	Ord=1	G=VAR_IN_OUT
+++D=THE\STATE	N=State	Ord=2	G=VAR_INPUT	Com=State of machine to watch
+++D=BOOL	N=MachineUsed	Ord=3	G=VAR_INPUT	Com=Machine is used
+++D=BOOL	N=ExternalTimer	Ord=4	G=VAR_OUTPUT	Com=Command an external timer
+++D=BOOL	N=NotCount_Suspend	Ord=5	G=VAR_INPUT	Com=Not count suspend as working time
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

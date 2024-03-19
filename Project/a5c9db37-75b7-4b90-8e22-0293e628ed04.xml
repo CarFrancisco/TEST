@@ -1,0 +1,15 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=REAL	N=WrapCheck	G=VAR
+++D=LREAL	N=Tol_Wrap	IV=100	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT	Com=TS is enabled
+++D=THE\TIMESTAMP	N=MyTS	Ord=1	G=VAR_IN_OUT	Com=Timestamp object
+++D=_sAXIS_REF	N=Axis	Ord=2	G=VAR_INPUT	Com=Reference axis
+++D=ULINT	N=TS_Input	Ord=3	G=VAR_INPUT	Com=Currrent timestamp of PLC
+++D=ULINT	N=TS_Output	Ord=4	G=VAR_INPUT	Com=Currrent timestamp of PLC
+++D=BOOL	N=Enabled	Ord=5	G=VAR_INPUT	Com=Use the TS object
+++D=BOOL	N=Avg	Ord=6	G=VAR_INPUT	Com=Do an average on axis speed
+++D=REAL	N=VelMin	IV=-1.0	Ord=7	G=VAR_INPUT	Com=Minimum speed to start TS function [u/s]
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

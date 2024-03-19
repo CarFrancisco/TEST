@@ -1,0 +1,39 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=REAL	N=TempTolUp	G=VAR
+++D=REAL	N=TempTolDown	G=VAR
+++D=REAL	N=Setpoint_Backup	G=VAR
+++D=REAL	N=Cmd_F_Backup	G=VAR
+++D=REAL	N=Cmd_C_Backup	G=VAR
+++D=BOOL	N=Mesure_Run	G=VAR	Com=Run mesurement sequence
+++D=REAL	N=Mesure_BackupSP	G=VAR	Com=Backup of setpoint [°C]
+++D=REAL	N=DeltaTemp	G=VAR	Com=Delta temperature [°C]
+++D=BOOL	N=Mesure_End	G=VAR	Com=Compute inertia
+++D=AccumulationTimer	N=Time_Heat	G=VAR
+++D=TIME	N=HeatTime	G=VAR	Com=Heating time for the delta temp
+++D=REAL	N=Inertia	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT	Com=Zone is used
+++D=THE\ZONE	N=MyZone	Ord=1	G=VAR_IN_OUT	Com=Zone object
+++D=WORD	N=TC_OperatingSta	Ord=2	G=VAR_INPUT	Com=Operating Status
+++D=REAL	N=TC_MesuredValue	Ord=3	G=VAR_INPUT	Com=Value mesured 
+++D=WORD	N=TC_AlarmSta	Ord=4	G=VAR_INPUT	Com=Output and Alarm Status
+++D=WORD	N=TC_OperationCmd	Ord=5	G=VAR_OUTPUT	Com=Operation Command
+++D=REAL	N=TC_SetPoint	Ord=6	G=VAR_OUTPUT	Com=Setpoint without profil
+++D=REAL	N=Temperature	Ord=7	G=VAR_OUTPUT	Com=Temperature of zone [°C]
+++D=BOOL	N=Enabled	Ord=8	G=VAR_INPUT	Com=Activation of the function block
+++D=REAL	N=CmdSetpoint	Ord=9	G=VAR_IN_OUT	Com=Setpoint of command
+++D=BOOL	N=Use_Heating	IV=True	Ord=10	G=VAR_INPUT	Com=This zone is heated
+++D=BOOL	N=Use_Cooling	IV=False	Ord=11	G=VAR_INPUT	Com=This zone is cooled
+++D=REAL	N=TempMax	Ord=12	G=VAR_INPUT
+++D=REAL	N=TempTol	Ord=13	G=VAR_INPUT	Com=Tolerance of temperature
+++D=BOOL	N=Run	Ord=14	G=VAR_INPUT	Com=Order for a Run
+++D=BOOL	N=Autotune	Ord=15	G=VAR_INPUT	Com=Order for an Autotune
+++D=BOOL	N=Commissioning	Ord=16	G=VAR_INPUT	Com=Order for a Commissioning
+++D=BOOL	N=Unit_F	Ord=17	G=VAR_INPUT	Com=Use fahrenheit unit
+++D=BOOL	N=Fault	Ord=18	G=VAR_OUTPUT
+++D=BOOL	N=Temp_OverTemp	Ord=19	G=VAR_OUTPUT
+++D=BOOL	N=Temp_TooHot	Ord=20	G=VAR_OUTPUT
+++D=BOOL	N=Temp_TooCold	Ord=21	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

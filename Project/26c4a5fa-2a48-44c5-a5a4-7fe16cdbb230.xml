@@ -1,0 +1,22 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=DATE_AND_TIME	N=Date_Maint	R=1	G=VAR	Com=Date to do the maintenance
+++D=DATE_AND_TIME	N=Date_Month1	G=VAR	Com=Date one month befor the maintenance
+++D=DATE_AND_TIME	N=Date_Month2	G=VAR	Com=Date two months befor the maintenance
+++D=DATE_AND_TIME	N=Date_Now	G=VAR	Com=Actual date
+++D=BOOL	N=Test	G=VAR
+++D=Rand	N=Rand_Instance	G=VAR
+++D=LREAL	N=Rand_Val	G=VAR
+++D=UINT	N=Rand_Seed	G=VAR
+++D=TOF	N=LT_PopDone	G=VAR
+++D=TON	N=Startup_Wait	G=VAR
+++D=TP	N=Startup_LT	G=VAR
+++D=TP	N=Cyclic_LT	G=VAR
+++D=AccumulationTimer	N=Cyclic_Timer	G=VAR
+++D=TP	N=Month_LT	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=THE\SAV	N=MySAV	Ord=1	G=VAR_IN_OUT
+++D=BOOL	N=Enabled	Ord=2	G=VAR_INPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

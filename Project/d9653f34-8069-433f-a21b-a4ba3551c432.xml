@@ -1,0 +1,18 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BYTE	N=S	IV=0	G=VAR	Com=Step of sequence
+++D=BOOL	N=Interlock_10	G=VAR	Com=Interlock power step 10
+++D=OmronLib\EC_1S\InitEncoder_1S	N=Reset_Encoder	G=VAR
+++D=ResetMCError	N=Reset_MC	G=VAR
+++D=BOOL	N=Power_50	G=VAR
+++D=MC_Home	N=Home	G=VAR
+++D=OmronLib\EC_1S\Restart_1S	N=Restart_1s	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=_sAXIS_REF	N=Axis	Ord=0	Const=1	G=VAR_IN_OUT
+++D=BOOL	N=Execute	Ord=1	G=VAR_INPUT	Com=Execute an axis absolut encoder reset for 1S
+++D=BOOL	N=Done	Ord=2	G=VAR_OUTPUT
+++D=BOOL	N=Busy	Ord=3	G=VAR_OUTPUT
+++D=BOOL	N=Power_Request	Ord=4	G=VAR_OUTPUT
+++D=BOOL	N=Power_Interlock	Ord=5	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

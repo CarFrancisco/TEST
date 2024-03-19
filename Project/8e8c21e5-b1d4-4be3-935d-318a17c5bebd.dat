@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module VenderID="1" ProductCode="1647192" Revision="16777216" IONodeID="0af983ab-5e0b-40bf-a77b-6e71541d0e61" DeviceName="G99AP02" SerialNo="0" IsEnabled="1">
+  <Parameter Index="20496" SubIndex="1" Value="False" />
+  <Parameter Index="20496" SubIndex="2" Value="False" />
+  <IOPort IOPortID="2093d6b7-6711-420f-af1f-9a3815f19fd7" Index="28672" SubIndex="1" />
+  <IOPort IOPortID="5157e063-a40b-4959-90f6-57f5b70e6960" Index="28672" SubIndex="2" />
+  <IOPort IOPortID="c85ac75d-640a-4755-9e93-1ef446b8c5da" Index="28688" SubIndex="1" />
+  <IOPort IOPortID="7186b284-bdf1-4244-9d4c-2c70e028d41c" Index="28688" SubIndex="2" />
+  <IOAllocation Index="5632">
+    <IOEntry>
+      <IOPortReference IOPortID="2093d6b7-6711-420f-af1f-9a3815f19fd7" />
+    </IOEntry>
+    <IOEntry>
+      <IOPortReference IOPortID="5157e063-a40b-4959-90f6-57f5b70e6960" />
+    </IOEntry>
+    <IOEntry BitLength="14" />
+    <IOEntry>
+      <IOPortReference IOPortID="c85ac75d-640a-4755-9e93-1ef446b8c5da" />
+    </IOEntry>
+    <IOEntry>
+      <IOPortReference IOPortID="7186b284-bdf1-4244-9d4c-2c70e028d41c" />
+    </IOEntry>
+  </IOAllocation>
+  <IOPort IOPortID="e09c4d1b-bce5-4d50-b54d-40c5e76b6947" Index="24593" SubIndex="1" />
+  <IOPort IOPortID="a25451e9-7a8a-417a-951c-b86d3286574c" Index="24593" SubIndex="2" />
+  <IOAllocation Index="6656">
+    <IOEntry>
+      <IOPortReference IOPortID="e09c4d1b-bce5-4d50-b54d-40c5e76b6947" />
+    </IOEntry>
+    <IOEntry BitLength="1" />
+    <IOEntry>
+      <IOPortReference IOPortID="a25451e9-7a8a-417a-951c-b86d3286574c" />
+    </IOEntry>
+    <IOEntry BitLength="13" />
+  </IOAllocation>
+</Module>

@@ -1,0 +1,51 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=Receive_Command	G=VAR	Com=?
+++D=BOOL	N=Receive_Data	G=VAR	Com=Receive a part of datas
+++D=BOOL	N=Receive_LastData	G=VAR	Com=Receive final part of datas
+++D=BOOL	N=Receive_Error	G=VAR	Com=Receive fault ?
+++D=BOOL	N=Send_Command	G=VAR	Com=?
+++D=BOOL	N=Send_Data	G=VAR	Com=Send a part of datas
+++D=BOOL	N=Send_LastData	G=VAR	Com=Send final part of datas
+++D=STRING[250]	N=Str_Send	G=VAR	Com=Datas to send
+++D=STRING[250]	N=Str_Receive	G=VAR	Com=Datas received
+++D=ARRAY[0..249] OF BYTE	N=Ary_Send	G=VAR	Com=Array of datas to send
+++D=ARRAY[0..249] OF BYTE	N=Ary_Receive	G=VAR	Com=Array of datas received
+++D=SINT	N=S	IV=-99	G=VAR	Com=Step of executing send command
+++D=SINT	N=R	IV=-99	G=VAR	Com=Step of executing send command
+++D=UINT	N=Size_Send	G=VAR	Com=Total size of send command
+++D=UINT	N=Offset_Send	G=VAR
+++D=BOOL	N=Send_Finish	G=VAR
+++D=BOOL	N=FirstRun	G=VAR
+++D=UINT	N=Size_Receive	G=VAR
+++D=UINT	N=Pos_Header	G=VAR
+++D=UINT	N=Pos_Terminator	G=VAR
+++D=UINT	N=Nb	G=VAR
+++D=UINT	N=Pos	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=WORD	N=In_Data_Type	Ord=0	G=VAR_INPUT	Com=Status received datas
+++D=WORD	N=Out_Data_Type	Ord=1	G=VAR_OUTPUT	Com=Command send datas
+++D=ARRAY[0..3] OF BYTE	N=In_Data_01	Ord=2	G=VAR_INPUT	Com=Input data 1
+++D=ARRAY[0..3] OF BYTE	N=In_Data_02	Ord=3	G=VAR_INPUT	Com=Input data 2
+++D=ARRAY[0..3] OF BYTE	N=In_Data_03	Ord=4	G=VAR_INPUT	Com=Input data 3
+++D=ARRAY[0..3] OF BYTE	N=In_Data_04	Ord=5	G=VAR_INPUT	Com=Input data 4
+++D=ARRAY[0..3] OF BYTE	N=In_Data_05	Ord=6	G=VAR_INPUT	Com=Input data 5
+++D=ARRAY[0..3] OF BYTE	N=Out_Data_01	Ord=7	G=VAR_OUTPUT	Com=Input data 1
+++D=ARRAY[0..3] OF BYTE	N=Out_Data_02	Ord=8	G=VAR_OUTPUT	Com=Input data 1
+++D=ARRAY[0..3] OF BYTE	N=Out_Data_03	Ord=9	G=VAR_OUTPUT	Com=Input data 1
+++D=ARRAY[0..3] OF BYTE	N=Out_Data_04	Ord=10	G=VAR_OUTPUT	Com=Input data 1
+++D=ARRAY[0..3] OF BYTE	N=Out_Data_05	Ord=11	G=VAR_OUTPUT	Com=Input data 1
+++D=UINT	N=In_Data_Length	Ord=12	G=VAR_INPUT	Com=Length of received datas
+++D=UINT	N=Out_Data_Length	Ord=13	G=VAR_OUTPUT	Com=Length of datas to send
+++D=THE\Serial	N=MySerial	Ord=14	G=VAR_IN_OUT
+++D=USINT	N=In_SID	Ord=15	G=VAR_INPUT	Com=Receive message SID
+++D=USINT	N=In_SID_Response	Ord=16	G=VAR_IN_OUT	Com=Confirmation receive message SID
+++D=USINT	N=Out_SID	Ord=17	G=VAR_IN_OUT	Com=Send message SID
+++D=USINT	N=Out_SID_Response	Ord=18	G=VAR_INPUT	Com=Confirmation send message SID
+++D=BOOL	N=Enabled	Ord=19	G=VAR_INPUT	Com=Enabled serial command
+++D=BOOL	N=Busy	Ord=20	G=VAR_OUTPUT	Com=Serial order executed
+++D=BOOL	N=NX_Ready	Ord=21	G=VAR_INPUT	Com=NX card data is active
+++D=ARRAY[0..3] OF BYTE	N=Header	Ord=22	G=VAR_INPUT	Com=Standard header of messages
+++D=ARRAY[0..3] OF BYTE	N=Terminator	Ord=23	G=VAR_INPUT	Com=Standard terminator of messages
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

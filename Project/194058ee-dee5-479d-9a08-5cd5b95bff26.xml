@@ -1,0 +1,14 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=THE\STATE	N=State_Machine	Ord=1	G=VAR_INPUT
+++D=BOOL	N=Enabled	Ord=2	G=VAR_INPUT
+++D=THE\STATUS	N=Status_Machine	Ord=3	G=VAR_IN_OUT
+++D=BOOL	N=Selection	Ord=4	G=VAR_INPUT	Com=Selection command of machine
+++D=BOOL	N=EmergencyStop	Ord=5	G=VAR_INPUT	Com=Emergency stop of machine
+++D=BOOL	N=Commissioning	Ord=6	G=VAR_INPUT	Com=Order to put machine in commissioning
+++D=BOOL	N=Commissioning_Switch	Ord=7	G=VAR_INPUT	Com=Commissioning key switch
+++D=BOOL	N=MachineOn_WithStopping	IV=False	Ord=8	G=VAR_INPUT	Com=Machine on is with run and stopping
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

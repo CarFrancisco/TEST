@@ -1,0 +1,65 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=Values_Changes	G=VAR	Com=Input value have changed
+++D=BOOL	N=FirstCam_WithOffset	G=VAR	Com=First cam started with offset
+++D=BOOL	N=OnlyReturn	G=VAR	Com=Cam slave is after opposote position, so the mouvement start with returning at home position
+++D=MC_CamIn	N=Cam_Start	G=VAR	Com=MC - Start cam work in periodic mode
+++D=REAL	N=Backup_Pos_ReferenceSide	G=VAR	Com=Backup - Position of the first side of tranquananage. (smaller value) [x]
+++D=REAL	N=Backup_Pos_OppositeSide	G=VAR	Com=Backup - Position of the seconde side of tranquananage. (bigger value) [x]
+++D=REAL	N=Backup_Stop_ReferenceSide	G=VAR	Com=Backup - Wait angle at the first side [°]
+++D=REAL	N=Backup_Stop_OppositeSide	G=VAR	Com=Backup - Wait angle at the seconde side [°]
+++D=REAL	N=Backup_Pitch	G=VAR	Com=Backup - Pitch [x/turn]
+++D=MC_CamOut	N=Cam_Stop	G=VAR	Com=MC - Stop the cam
+++D=REAL	N=Pos_Start_Abs	G=VAR	Com=Absolut position of traversing on start side [mm]
+++D=REAL	N=Pos_Opposite_Abs	G=VAR	Com=Absolut position of traversing on opposite side [mm]
+++D=REAL	N=Offset_Pos_AtStart	G=VAR	Com=Check the offset between real position and start position [mm]
+++D=REAL	N=Deg_Wait_Start	G=VAR
+++D=REAL	N=Deg_Wait_End	G=VAR
+++D=MC_GenerateCamTable	N=Cam_Generate	G=VAR
+++D=REAL	N=Pos_Start	G=VAR	Com=Relative start position of tranquanage (always 0) [mm]
+++D=REAL	N=Pos_Opposite	G=VAR	Com=Relative position of tranquanage at opposite side [mm]
+++D=REAL	N=Pos_End	G=VAR	Com=Relative position of tranquanage at motor side [mm]
+++D=REAL	N=Travel_Distance_Pos	G=VAR	Com=Travel distance of traversing in positive direction [mm]
+++D=REAL	N=Travel_Distance_Neg	G=VAR	Com=Travel distance of traversing in negative direction [mm]
+++D=INT	N=i	G=VAR
+++D=BOOL	N=WriteCamDefinitionDone	G=VAR	Com=The node computing is done
+++D=BOOL	N=CamGenerationDone	G=VAR	Com=The cam computing is done
+++D=BOOL	N=VIew_Error	G=VAR
+++D=WORD	N=View_ErrorID	G=VAR
+++D=BOOL	N=test	G=VAR
+++D=UINT	N=EndOfCam	G=VAR
+++D=REAL	N=Stop_Dist	G=VAR
+++D=REAL	N=Stop_Angle	G=VAR
+++D=UINT	N=Cam_Index	G=VAR
+++D=BOOL	N=Cam_EoP	G=VAR	Com=Cam end of profil
+++D=BOOL	N=Cam_Sync	G=VAR
+++D=BOOL	N=e_Cam	G=VAR
+++D=WORD	N=e_Id	G=VAR
+++D=BOOL	N=test_CamIN	G=VAR
+++D=BOOL	N=Cam_Busy	G=VAR
+++D=BOOL	N=test_LockStop	G=VAR
+++D=BOOL	N=CamStart_MasterPos_modified	G=VAR	Com=Special dedicace
+++D=LREAL	N=Cam_StartPos	G=VAR	Com=Master position for cam start
+++D=BOOL	N=Pause_Run	G=VAR	Com=Cam pause is running
+++D=REAL	N=Safe_Dist	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=_sAXIS_REF	N=Master	Ord=0	Const=1	G=VAR_IN_OUT	Com=Reference axis [°]
+++D=_sAXIS_REF	N=Slave	Ord=1	Const=1	G=VAR_IN_OUT	Com=Trancanned axis [x]
+++D=BOOL	N=Execute	Ord=2	G=VAR_INPUT
+++D=BOOL	N=InTraversing	Ord=3	G=VAR_OUTPUT	Com=Traversing is running
+++D=REAL	N=Pos_ReferenceSide	Ord=4	G=VAR_INPUT	Com=Position of the first side of tranquananage. (smaller value) [x]
+++D=REAL	N=Pos_OppositeSide	Ord=5	G=VAR_INPUT	Com=Position of the seconde side of tranquananage. (bigger value) [x]
+++D=REAL	N=Stop_ReferenceSide	Ord=6	G=VAR_INPUT	Com=Wait angle at the first side [°]
+++D=REAL	N=Stop_OppositeSide	Ord=7	G=VAR_INPUT	Com=Wait angle at the seconde side [°]
+++D=REAL	N=Pitch	Ord=8	G=VAR_INPUT	Com=Pitch [x/turn]
+++D=REAL	N=CamStart_MasterPos	IV=-999.5	Ord=9	G=VAR_INPUT	Com=Master cam starting position (cam start immediately if omited)
+++D=BOOL	N=Pause	Ord=10	G=VAR_INPUT	Com=Put movement in pause
+++D=ARRAY[0..110] OF _sMC_CAM_REF	N=Tranquanage	Ord=11	G=VAR_IN_OUT	Com=Cam of tranquanange
+++D=_sMC_CAM_PROPERTY	N=CamProperty	Ord=12	G=VAR_IN_OUT	Com=Cam property from "Cam Definition"
+++D=ARRAY[0..7] OF _sMC_CAM_NODE	N=Node	Ord=13	G=VAR_IN_OUT	Com=Cam node from "Cam Definition"
+++D=REAL	N=Nb_TurnByProfil	Ord=14	G=VAR_OUTPUT	Com=Number of spool turn by profil [t]
+++D=BOOL	N=ToOpposite	Ord=15	G=VAR_OUTPUT	Com=Traversing move to opposite side
+++D=BOOL	N=ToReference	Ord=16	G=VAR_OUTPUT	Com=Traversing move to reference side
+++D=BOOL	N=EndOfProfil	Ord=17	G=VAR_OUTPUT	Com=End of profil
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

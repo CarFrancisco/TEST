@@ -1,0 +1,10 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=UINT	N=i	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT	Com=Machine is used
+++D=THE\Sysmetric	N=Mgr	Ord=1	G=VAR_IN_OUT	Com=Global sysmetric manager
+++D=BOOL	N=Enabled	Ord=2	G=VAR_INPUT	Com=Enabled sysmetric calculation
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=BOOL	N=T_1s	G=VAR_EXTERNAL

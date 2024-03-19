@@ -1,0 +1,1 @@
+﻿{"CLs":[{"__type":"IST","EID":"5b7862f1-da74-49ee-b726-03a0594316cc","H":87.000000000000028,"TXT":"\/\/ \u000d\u000aOut:=NanoSecToTime((INT_TO_LINT(IN))*1000000);","W":708}],"LRI":1,"RRI":2,"VLs":[]}

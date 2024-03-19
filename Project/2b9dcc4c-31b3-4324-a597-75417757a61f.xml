@@ -1,0 +1,9 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT	Com=TS is enabled
+++D=THE\TIMESTAMP	N=MyTS	Ord=1	G=VAR_IN_OUT	Com=Timestamp object
+++D=BOOL	N=Enabled	Ord=2	G=VAR_INPUT	Com=Use the TS object
+++D=THE\TIMESTAMP	N=MasterTS	Ord=3	G=VAR_INPUT	Com=Master TS object
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

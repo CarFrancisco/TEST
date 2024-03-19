@@ -1,0 +1,32 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=INT	N=Power_Temp	G=VAR
+++D=TP	N=Pulse	G=VAR
+++D=TON	N=Wait_To_Start	G=VAR
+++D=REAL	N=Power_WithCorr	G=VAR
+++D=TP	N=Timer_Pulse	G=VAR
+++D=REAL	N=PulseTimeREALms	G=VAR
+++D=TIME	N=PulseDuration	G=VAR
+++D=INT	N=Power_SP	G=VAR	Com=Power setpoint [0..4000]
+++D=INT	N=LIMIT_MIN	IV=400	G=VAR	Com=Minimum analog output [0..4000]
+++D=REAL	N=PulseTime_Backup	G=VAR	Com=Time of pulse [s]
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=THE\LASER	N=MyLaser	Ord=1	G=VAR_IN_OUT
+++D=BOOL	N=Enabled	Ord=2	G=VAR_INPUT	Com=This laser is really present?
+++D=BOOL	N=L_StartPwr	Ord=3	G=VAR_INPUT	Com=Power supply active
+++D=BOOL	N=L_PS_Act	Ord=4	G=VAR_INPUT
+++D=BOOL	N=L_PowerOn	Ord=5	G=VAR_INPUT	Com=Laser On
+++D=BOOL	N=L_ErrRdy	Ord=6	G=VAR_INPUT	Com=State of Laser (0=Error 1=Ready)
+++D=BOOL	N=L_IsShoot	Ord=7	G=VAR_INPUT	Com=Laser is shooting
+++D=REAL	N=Power_Max	Ord=8	G=VAR_INPUT	Com=Power maximum of laser [W] 
+++D=INT	N=L_Pwr_FB	IV=-9999	Ord=9	G=VAR_INPUT	Com=The power feedback [0..4000]
+++D=BOOL	N=Commissioning	Ord=10	G=VAR_INPUT	Com=Put Laser in commissioning
+++D=INT	N=L_Pwr_SP	Ord=11	G=VAR_OUTPUT	Com=The power setpoint [0..4000]
+++D=BOOL	N=L_Start	Ord=12	G=VAR_OUTPUT	Com=Turn up the laser
+++D=BOOL	N=L_Pointer	Ord=13	G=VAR_OUTPUT	Com=Activate the pointer 
+++D=BOOL	N=L_Shoot	Ord=14	G=VAR_OUTPUT	Com=Shoot with laser 
+++D=BOOL	N=L_Reset	Ord=15	G=VAR_OUTPUT	Com=Reset the laser
+++D=BOOL	N=IsOff	Ord=16	G=VAR_OUTPUT	Com=Laser is Off
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

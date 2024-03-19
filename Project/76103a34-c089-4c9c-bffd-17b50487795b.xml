@@ -1,0 +1,24 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=SINT	N=i	IV=0	G=VAR
+++D=SINT	N=Size	IV=-1	G=VAR
+++D=ARRAY[0..9] OF SINT	N=Node	G=VAR
+++D=BOOL	N=Network_Fault	G=VAR
+++D=BOOL	N=Network_NeedReset	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=THE\STATUS	N=MyStatus	Ord=0	G=VAR_IN_OUT	Com=Status of machine
+++D=BOOL	N=Network_Check	Ord=1	G=VAR_INPUT	Com=Run network check
+++D=BOOL	N=Network_Run	Ord=2	G=VAR_OUTPUT	Com=Network is running
+++D=SINT	N=Node_1	IV=-1	Ord=3	G=VAR_INPUT	Com=Node number of device n°1
+++D=SINT	N=Node_2	IV=-1	Ord=4	G=VAR_INPUT	Com=Node number of device n°2
+++D=SINT	N=Node_3	IV=-1	Ord=5	G=VAR_INPUT	Com=Node number of device n°3
+++D=SINT	N=Node_4	IV=-1	Ord=6	G=VAR_INPUT	Com=Node number of device n°4
+++D=SINT	N=Node_5	IV=-1	Ord=7	G=VAR_INPUT	Com=Node number of device n°5
+++D=BOOL	N=Fault	Ord=8	G=VAR_OUTPUT	Com=Network in fault
+++D=BOOL	N=NeedReset	Ord=9	G=VAR_OUTPUT	Com=Network need an EterCAT reset
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=ARRAY[1..192] OF BOOL	N=_EC_RegSlavTbl	Const=1	G=VAR_EXTERNAL
+++D=ARRAY[1..192] OF BOOL	N=_EC_DisableSlavTbl	Const=1	G=VAR_EXTERNAL
+++D=ARRAY[1..192] OF BOOL	N=_EC_PDSlavTbl	Const=1	G=VAR_EXTERNAL
+++D=ARRAY[1..192] OF BOOL	N=_EC_EntrySlavTbl	Const=1	G=VAR_EXTERNAL

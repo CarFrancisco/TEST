@@ -1,0 +1,15 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=TON	N=Debounce	G=VAR
+++D=TON	N=LivingTime_Wait1	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT	Com=Sensor is used on machine
+++D=THE\SENSOR	N=MySensor	Ord=1	G=VAR_IN_OUT
+++D=BOOL	N=Enabled	Ord=2	G=VAR_INPUT	Com=Use sensor on the machines
+++D=BOOL	N=Input	Ord=3	G=VAR_INPUT	Com=Sensor input
+++D=BOOL	N=Use_Debounce	IV=False	Ord=4	G=VAR_INPUT	Com=Waiting time to activate the output
+++D=TIME	N=DebounceTime	IV=0s	Ord=5	G=VAR_INPUT	Com=Time for debounce
+++D=BOOL	N=Use_LivingTime	IV=False	Ord=6	G=VAR_INPUT	Com=Leaves the output active for a while 
+++D=TIME	N=LivingTime	IV=0s	Ord=7	G=VAR_INPUT	Com=Time for livingtime
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

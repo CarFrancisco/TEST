@@ -1,0 +1,19 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=REAL	N=CmdSetpoint_Backup	G=VAR
+++D=INT	N=Heating_Backup	IV=0	G=VAR
+++D=INT	N=Waiting_Backup	IV=0	G=VAR
+++D=INT	N=Cooling_Backup	IV=0	G=VAR
+++D=INT	N=Cleaning_Backup	IV=0	G=VAR
+++D=INT	N=Profil_Backup	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT	Com=The function block is actived
+++D=THE\ZONE	N=MyZone	Ord=1	G=VAR_IN_OUT
+++D=BOOL	N=Enabled	Ord=2	G=VAR_INPUT	Com=Activation of the function block
+++D=INT	N=Profil	Ord=3	G=VAR_INPUT	Com=Selection of the profil; 1=Heating, 2=Waiting, 4=Cooling, 8=Cleaning
+++D=INT	N=Cleaning	Ord=4	G=VAR_IN_OUT	Com=Cleaning mode
+++D=INT	N=Cooling	Ord=5	G=VAR_IN_OUT	Com=Cooling mode
+++D=INT	N=Waiting	Ord=6	G=VAR_IN_OUT	Com=Waiting mode
+++D=INT	N=Heating	Ord=7	G=VAR_IN_OUT	Com=Heating mode
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

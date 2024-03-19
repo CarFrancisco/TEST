@@ -1,0 +1,8 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=DO_Buzzer	G=VAR	Com=Digital ouptut of sensor
+++D=Buzzer_Config	N=Config_Buzzer	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=THE\BUZZER	N=Buzzer	G=VAR_EXTERNAL
+++D=BOOL	N=Commissioning	G=VAR_EXTERNAL

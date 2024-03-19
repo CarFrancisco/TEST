@@ -1,0 +1,26 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=REAL	N=Output_Filtred	G=VAR
+++D=BOOL	N=Start_Computation	G=VAR
+++D=REAL	N=Output_Limit	G=VAR
+++D=REAL	N=Aff_Min	G=VAR
+++D=REAL	N=Aff_Max	G=VAR
+++D=REAL	N=View_High_Backup	G=VAR	Com=Backup value of input view high to detect an update
+++D=REAL	N=View_Low_Backup	G=VAR	Com=Backup value of input view low to detect an update
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=THE\Graph	N=MyGraph	Ord=1	G=VAR_IN_OUT
+++D=BOOL	N=Enable	Ord=2	G=VAR_INPUT
+++D=BOOL	N=Start	Ord=3	G=VAR_INPUT
+++D=REAL	N=Mesure	Ord=4	G=VAR_INPUT
+++D=REAL	N=Mesure_max	Ord=5	G=VAR_INPUT	Com=Graphic maximum value [u]
+++D=REAL	N=Mesure_min	Ord=6	G=VAR_INPUT	Com=Graphic minimum value [u]
+++D=REAL	N=View_HighValue	Ord=7	G=VAR_INPUT	Com=Auto update high user value [u]
+++D=REAL	N=View_LowValue	Ord=8	G=VAR_INPUT	Com=Auto update low user value [u]
+++D=INT	N=Average	Ord=9	G=VAR_INPUT
+++D=STRING[6]	N=Unity	Ord=10	G=VAR_INPUT
+++D=Real	N=Output	Ord=11	G=VAR_OUTPUT
+++D=BOOL	N=Error	Ord=12	G=VAR_OUTPUT
+++D=INT	N=Error_code	Ord=13	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

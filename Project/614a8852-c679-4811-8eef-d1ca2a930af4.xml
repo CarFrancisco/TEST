@@ -1,0 +1,28 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=MC_SyncMoveVelocity	N=Servo_MoveVel_CSV	G=VAR
+++D=LREAL	N=Ramp_Interval	G=VAR	Com=Execution interval [s]
+++D=LREAL	N=Ramp_Step_Up	G=VAR	Com=Speed step for acceleration [CommandUnit/s]
+++D=LREAL	N=Ramp_Step_Down	G=VAR	Com=Speed step for deceleration [CommandUnit/s]
+++D=BOOL	N=Ramp_Start	G=VAR
+++D=LREAL	N=Ramp_In	G=VAR
+++D=LREAL	N=Ramp_Out	G=VAR
+++D=BOOL	N=Ramp_Started	G=VAR
+++D=BOOL	N=Order_Stop	G=VAR	Com=Order to stop the move vel
+++D=MC_Stop_v2	N=Servo_Stop	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=_sAXIS_REF	N=Axis	Ord=0	Const=1	G=VAR_IN_OUT	Com=Axis
+++D=BOOL	N=Execute	Ord=1	G=VAR_INPUT	Com=Execute
+++D=LREAL	N=Velocity	Ord=2	G=VAR_INPUT	Com=Target Velocity [CommandUnit/s]
+++D=_eMC_CMDPOS_MODE	N=CmdPosMode	Ord=3	G=VAR_INPUT	Com=Command Current Position Count Selection
+++D=_eMC_BUFFER_MODE	N=BufferMode	Ord=4	G=VAR_INPUT	Com=Buffer Mode Selection
+++D=BOOL	N=InVelocity	Ord=5	G=VAR_OUTPUT	Com=Target Velocity Reached
+++D=BOOL	N=Busy	Ord=6	G=VAR_OUTPUT	Com=Executing
+++D=BOOL	N=Active	Ord=7	G=VAR_OUTPUT	Com=Controlling
+++D=BOOL	N=CommandAborted	Ord=8	G=VAR_OUTPUT	Com=Command Aborted
+++D=BOOL	N=ErrorActive	Ord=9	G=VAR_OUTPUT	Com=Error
+++D=WORD	N=ErrorID	Ord=10	G=VAR_OUTPUT	Com=Error Code
+++D=LREAL	N=Acceleration	Ord=11	G=VAR_INPUT	Com=Acceleration [CommandUnit/s²]
+++D=LREAL	N=Deceleration	Ord=12	G=VAR_INPUT	Com=Deceleration [CommandUnit/s²]
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

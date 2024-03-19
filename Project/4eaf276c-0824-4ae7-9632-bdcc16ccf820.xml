@@ -1,0 +1,44 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=Clearing_MasterExit	G=VAR	Com=Master is after state OR state is not used
+++D=BOOL	N=Clearing_SlaveExit	G=VAR	Com=Slave active state is finish
+++D=BOOL	N=Clearing_Locked	G=VAR	Com=Clearing locked for master
+++D=BOOL	N=Starting_MasterExit	G=VAR	Com=Master is after state OR state is not used
+++D=BOOL	N=Starting_SlaveExit	G=VAR	Com=Slave active state is finish
+++D=BOOL	N=Starting_Locked	G=VAR	Com=Clearing locked for master
+++D=BOOL	N=Execute_MasterExit	G=VAR	Com=Master is after state OR state is not used
+++D=BOOL	N=Execute_SlaveExit	G=VAR	Com=Slave active state is finish
+++D=BOOL	N=Execute_Locked	G=VAR	Com=Clearing locked for master
+++D=BOOL	N=Stopping_MasterExit	G=VAR	Com=Master is after state OR state is not used
+++D=BOOL	N=Stopping_SlaveExit	G=VAR	Com=Slave active state is finish
+++D=BOOL	N=Stopping_Locked	G=VAR	Com=Clearing locked for master
+++D=BOOL	N=Aborting_MasterExit	G=VAR	Com=Master is after state OR state is not used
+++D=BOOL	N=Aborting_SlaveExit	G=VAR	Com=Slave active state is finish
+++D=BOOL	N=Aborting_Locked	G=VAR	Com=Clearing locked for master
+++D=BOOL	N=Suspending_MasterExit	G=VAR	Com=Master is after state OR state is not used
+++D=BOOL	N=Suspending_SlaveExit	G=VAR	Com=Slave active state is finish
+++D=BOOL	N=Suspending_Locked	G=VAR	Com=Clearing locked for master
+++D=BOOL	N=Unsuspending_MasterExit	G=VAR	Com=Master is after state OR state is not used
+++D=BOOL	N=Unsuspending_SlaveExit	G=VAR	Com=Slave active state is finish
+++D=BOOL	N=Unsuspending_Locked	G=VAR	Com=Clearing locked for master
+++D=BOOL	N=Resetting_MasterExit	G=VAR	Com=Master is after state OR state is not used
+++D=BOOL	N=Resetting_SlaveExit	G=VAR	Com=Slave active state is finish
+++D=BOOL	N=Resetting_Locked	G=VAR	Com=Clearing locked for master
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=THE\STATE	N=Slave	Ord=1	G=VAR_IN_OUT	Com=Slave state
+++D=BOOL	N=Enabled	Ord=2	G=VAR_INPUT
+++D=THE\STATE	N=Master	Ord=3	G=VAR_IN_OUT	Com=Master state, give order to slave state
+++D=BOOL	N=Aborting_Interlock	Ord=4	G=VAR_INPUT	Com=The master waits until the slave's "Aborting" state is finished.
+++D=BOOL	N=Clearing_Interlock	Ord=5	G=VAR_INPUT	Com=The master waits until the slave's "Clear" state is finished.
+++D=BOOL	N=Resetting_Interlock	Ord=6	G=VAR_INPUT	Com=The master waits until the slave's "Resetting" state is finished.
+++D=BOOL	N=Starting_Interlock	Ord=7	G=VAR_INPUT	Com=The master waits until the slave's "Starting" state is finished.
+++D=BOOL	N=Stopping_Interlock	Ord=8	G=VAR_INPUT	Com=The master waits until the slave's "Stopping" state is finished.
+++D=BOOL	N=Suspending_Interlock	Ord=9	G=VAR_INPUT	Com=The master waits until the slave's "Suspending" state is finished.
+++D=BOOL	N=Unsuspending_Interlock	Ord=10	G=VAR_INPUT	Com=The master waits until the slave's "Unsupending" state is finished.
+++D=BOOL	N=NotUseMaster_Suspend	Ord=11	G=VAR_INPUT	Com=Not use "Suspend" order from master
+++D=BOOL	N=NotUseMaster_Unsuspend	Ord=12	G=VAR_INPUT	Com=Not use "Unsuspend" order from master
+++D=BOOL	N=NotUseMaster_Start	Ord=13	G=VAR_INPUT	Com=Not use "Start" order from master
+++D=BOOL	N=NotUseMaster_Stop	Ord=14	G=VAR_INPUT	Com=Not use "Stop" order from master
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

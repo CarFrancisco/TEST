@@ -1,0 +1,27 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=REAL	N=Velocity_SP	G=VAR	Com=Velocity setpoint of invertor [x]
+++D=REAL	N=Velocity_FB	G=VAR	Com=Velocity feedback of invertor [x]
+++D=THE\uWord	N=Int_Fault_Code	G=VAR	Com=Value of faut code
+++D=TON	N=Timer_Reset	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=THE\INVERTER	N=Axis	Ord=0	G=VAR_IN_OUT	Com=Inverter
+++D=INT	N=Speed_Feedback	Ord=1	G=VAR_INPUT
+++D=INT	N=Speed_Setpoint	Ord=2	G=VAR_OUTPUT
+++D=BOOL	N=Axis_Used	Ord=3	G=VAR_OUTPUT	Com=Invertor is enabled
+++D=BOOL	N=Enabled	Ord=4	G=VAR_INPUT	Com=Enabled the invertor
+++D=REAL	N=Volt	IV=50	Ord=5	G=VAR_INPUT	Com=Volt of motor for define speed [V] (Empty = 10)
+++D=REAL	N=At_Velocity	IV=100	Ord=6	G=VAR_INPUT	Com=Speed of moteur for define frequency [x] (Empty = 100)
+++D=STRING[6]	N=Unit	Ord=7	G=VAR_INPUT	Com=User unity of velocity
+++D=REAL	N=Volt_Max	IV=50	Ord=8	G=VAR_INPUT	Com=Volt maximum of motor [V] [10]
+++D=REAL	N=Velocity_Max	IV=0	Ord=9	G=VAR_INPUT	Com=Velocity maximum of motor [x] (Disabled = 0)
+++D=BOOL	N=Feedback_Used	Ord=10	G=VAR_INPUT
+++D=BOOL	N=Drive_Fault	Ord=11	G=VAR_INPUT
+++D=BOOL	N=Commissioning	IV=False	Ord=12	G=VAR_INPUT	Com=Put inverter in commissioning
+++D=BOOL	N=Fault_Status	Ord=13	G=VAR_OUTPUT	Com=Drive or FB in fault (=1)
+++D=WORD	N=Fault_Code	Ord=14	G=VAR_OUTPUT	Com=Code of fault
+++D=BOOL	N=CW	Ord=15	G=VAR_OUTPUT
+++D=BOOL	N=CCW	Ord=16	G=VAR_OUTPUT
+++D=BOOL	N=Reset	Ord=17	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

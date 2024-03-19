@@ -1,0 +1,41 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=INT	N=Power_Temp	G=VAR
+++D=REAL	N=Power_SP_WithLimit	G=VAR
+++D=REAL	N=Power_WithCorr	G=VAR
+++D=REAL	N=Power_FB	G=VAR
+++D=BOOL	N=Tmp	G=VAR
+++D=BOOL	N=L_SIK	G=VAR	Com=Safety circuit open
+++D=BOOL	N=L_IsOn	G=VAR	Com=Laser is on
+++D=BOOL	N=L_Ready	G=VAR	Com=Laser ready
+++D=BOOL	N=L_Pulse	G=VAR	Com=Laser is pulsing
+++D=BOOL	N=L_Fault	G=VAR	Com=Laser ready to pulse
+++D=BOOL	N=L_ProgActive	G=VAR	Com=Laser program active
+++D=BOOL	N=L_RequestLaser	G=VAR	Com=Laser request
+++D=BOOL	N=L_ExternalControl	G=VAR	Com=External control
+++D=BOOL	N=L_LaserOn	G=VAR	Com=Turn on laser
+++D=BOOL	N=L_Standby	G=VAR	Com=Standby mode
+++D=BOOL	N=L_PilotOn	G=VAR	Com=Pilot laser is On
+++D=BOOL	N=L_ProgStart	G=VAR	Com=Static program launch
+++D=BOOL	N=L_Reset	G=VAR	Com=Reset laser
+++D=BOOL	N=L_PanelLock	G=VAR	Com=Lock the Laser HMI
+++D=BOOL	N=L_Assigned	G=VAR
+++D=BOOL	N=L_ExtActivated	G=VAR	Com=Laser is controllable
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=THE\LASER	N=MyLaser	Ord=0	G=VAR_IN_OUT
+++D=UINT	N=L_Power_FB	Ord=1	G=VAR_INPUT	Com=The power feedback [0..4000]
+++D=WORD	N=L_Status_Device	Ord=2	G=VAR_INPUT
+++D=USINT	N=L_LightPath_Current	Ord=3	G=VAR_INPUT
+++D=USINT	N=L_ProgramNumber_Current	Ord=4	G=VAR_INPUT
+++D=UINT	N=L_Power_SP	Ord=5	G=VAR_OUTPUT	Com=The power setpoint [0..4000]
+++D=WORD	N=L_Basic_Functions	Ord=6	G=VAR_OUTPUT
+++D=USINT	N=L_ProgramNumber	Ord=7	G=VAR_OUTPUT
+++D=USINT	N=L_LightPath	Ord=8	G=VAR_OUTPUT
+++D=BOOL	N=ENO	Ord=9	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=Enabled	Ord=10	G=VAR_INPUT	Com=This laser is really present?
+++D=UINT	N=L_Power_Max	Ord=11	G=VAR_INPUT	Com=Power maximum of laser [W] 
+++D=BOOL	N=Commissioning	Ord=12	G=VAR_INPUT	Com=Put Laser in commissioning
+++D=BOOL	N=Manual	Ord=13	G=VAR_INPUT	Com=Force manuel use of laser
+++D=BOOL	N=Pilot	Ord=14	G=VAR_INPUT	Com=Activate the pilot laser
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

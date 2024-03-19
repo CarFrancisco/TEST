@@ -1,0 +1,12 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=ReceiveOrder	G=VAR
+++D=TOF	N=LivingTIme	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=THE_PNEUMATIC_ANALOG	N=My_Gaz_Reg	Ord=0	G=VAR_IN_OUT
+++D=BOOL	N=Start	Ord=1	G=VAR_INPUT
+++D=REAL	N=Setpoint	Ord=2	G=VAR_INPUT	Com=Setpoint 
+++D=INT	N=Gas	Ord=3	G=VAR_INPUT	Com=Air=1, Gas 1=2, Gas 2=3
+++D=BOOL	N=IsOut	Ord=4	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

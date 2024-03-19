@@ -1,0 +1,9 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=ReceiveOrder	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=THE\EFD	N=MyEFD	Ord=0	G=VAR_IN_OUT
+++D=BOOL	N=Reset	Ord=1	G=VAR_INPUT	Com=Order to stop shoot (on Flank)
+++D=BOOL	N=IsReady	Ord=2	G=VAR_OUTPUT	Com=Is not shooting (Order received and laser is working)
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

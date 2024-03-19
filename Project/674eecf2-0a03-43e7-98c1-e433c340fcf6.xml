@@ -1,0 +1,27 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=REAL	N=Power_SP_WithLimit	G=VAR
+++D=BOOL	N=CanWork	G=VAR	Com=The converter is powered and can be used in remote
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=THE\EFD	N=MyEFD	Ord=1	G=VAR_IN_OUT
+++D=BOOL	N=Enabled	Ord=2	G=VAR_INPUT	Com=This laser is really present?
+++D=INT	N=IO_Pwr_FB	Ord=3	G=VAR_INPUT	Com=The power feedback
+++D=BOOL	N=IO_Remote	Ord=4	G=VAR_INPUT	Com=Remote command are enabled 
+++D=BOOL	N=IO_Ready	Ord=5	G=VAR_INPUT	Com=Converter is ready to start heating
+++D=BOOL	N=IO_PowerOn	Ord=6	G=VAR_INPUT	Com=Converter is heating
+++D=BOOL	N=IO_Fail	Ord=7	G=VAR_INPUT	Com=Converter in fault
+++D=BOOL	N=IO_EnergyAlarm	Ord=8	G=VAR_INPUT	Com=Energy used is out of range
+++D=BOOL	N=IO_ProgRun	Ord=9	G=VAR_INPUT	Com=Sequence is running
+++D=BOOL	N=IO_CycleComplet	Ord=10	G=VAR_INPUT	Com=Heating sequence has completed
+++D=REAL	N=Power_Max	Ord=11	G=VAR_INPUT	Com=Power maximum of laser [W] 
+++D=BOOL	N=Commissioning	Ord=12	G=VAR_INPUT	Com=Put Laser in commissioning
+++D=INT	N=IO_Pwr_SP	Ord=13	G=VAR_OUTPUT	Com=The power setpoint
+++D=BOOL	N=IO_Power_Cmd	Ord=14	G=VAR_OUTPUT	Com=Start heating
+++D=BOOL	N=IO_Reset	Ord=15	G=VAR_OUTPUT	Com=Reset converter
+++D=BOOL	N=IO_Interlock	Ord=16	G=VAR_OUTPUT	Com=Interlock heating
+++D=BOOL	N=IO_Prog_0	Ord=17	G=VAR_OUTPUT	Com=Inducter program (bit 0)
+++D=BOOL	N=IO_Prog_1	Ord=18	G=VAR_OUTPUT	Com=Inducter program (bit 1)
+++D=BOOL	N=IO_Prog_2	Ord=19	G=VAR_OUTPUT	Com=Inducter program (bit 2)
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

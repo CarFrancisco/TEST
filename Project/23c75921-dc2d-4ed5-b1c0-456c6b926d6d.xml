@@ -1,0 +1,28 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=Run	G=VAR	Com=Verin soft is running
+++D=BOOL	N=Out	G=VAR	Com=Out commande
+++D=TON	N=Status_Out	G=VAR
+++D=TON	N=Status_In	G=VAR
+++D=TON	N=Alaram_TooMuchTime	G=VAR
+++D=BOOL	N=TooMuchTime	G=VAR	Com=Too much time in movement
+++D=BOOL	N=Error_DoubleConfig	G=VAR
+++D=BOOL	N=Error_MultiOrder	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=THE\PNEUMATIC	N=My_Pneumatic	Ord=1	G=VAR_IN_OUT
+++D=BOOL	N=Activate	Ord=2	G=VAR_INPUT	Com=Active the cylinder
+++D=BOOL	N=Enabled	Ord=3	G=VAR_INPUT	Com=This cylinder is mounted on the machine?
+++D=BOOL	N=Error	Ord=4	G=VAR_OUTPUT	Com=Bad using of bloc
+++D=TIME	N=TimeMax	IV=T#0S	Ord=5	G=VAR_INPUT	Com=Moving time maximum
+++D=BOOL	N=Cmd_Out	Ord=6	G=VAR_IN_OUT	Com=Command to move cylinder in OUT position
+++D=BOOL	N=Cpt_Out_Mounted	IV=False	Ord=7	G=VAR_INPUT	Com=Sensor for cylinder in position OUT is mounted
+++D=BOOL	N=Cpt_Out	IV=False	Ord=8	G=VAR_INPUT	Com=Sensor OUT input
+++D=TIME	N=Time_Out	Ord=9	G=VAR_INPUT	Com=Time to move in OUT position without sensor
+++D=BOOL	N=Cmd_In	Ord=10	G=VAR_IN_OUT	Com=Command to move cylinder in IN position
+++D=BOOL	N=Cpt_In_Mounted	IV=False	Ord=11	G=VAR_INPUT	Com=Sensor for cylinder in position IN is mounted
+++D=BOOL	N=Cpt_In	IV=False	Ord=12	G=VAR_INPUT	Com=Sensor IN input
+++D=TIME	N=Time_In	Ord=13	G=VAR_INPUT	Com=Time to move in IN position without sensor
+++D=BOOL	N=Commissioning	Ord=14	G=VAR_INPUT	Com=Put cylinder in commissioning
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

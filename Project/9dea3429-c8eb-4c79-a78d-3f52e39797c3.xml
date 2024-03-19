@@ -1,0 +1,39 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=INT	N=My_pointer_of_pts	G=VAR
+++D=BOOL	N=My_Enable_trig	G=VAR
+++D=R_TRIG	N=Enable_Trigger	G=VAR
+++D=ARRAY[0..9] OF Real	N=My_array_point_X	G=VAR
+++D=ARRAY[0..9] OF bool	N=My_array_point_X_comp	G=VAR
+++D=INT	N=My_pointer_of_value	G=VAR
+++D=INT	N=My_pointer_of_value_calc	G=VAR
+++D=Real	N=My_setpoint_compar	G=VAR
+++D=Real	N=My_setpoint	G=VAR
+++D=INT	N=i	G=VAR
+++D=INT	N=n	G=VAR
+++D=RecSort	N=RecSort_1	G=VAR
+++D=R_TRIG	N=Trigger_concatenation	G=VAR
+++D=BOOL	N=Rec_Sort_Operating	G=VAR
+++D=BOOL	N=Rec_Sort_operating_start	G=VAR
+++D=BOOL	N=Trigger_concatenation_out	G=VAR
+++D=TON	N=Timer_Rec_Sort	G=VAR
+++D=BOOL	N=RecSort_done	Ord=11	G=VAR
+++D=BOOL	N=RecSort_busy	Ord=11	G=VAR
+++D=BOOL	N=RecSort_error	Ord=11	G=VAR
+++D=BOOL	N=Load_Value	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=THE\APR	N=Apr_Struct	Ord=1	G=VAR_IN_OUT
+++D=BOOL	N=Enable	Ord=2	G=VAR_INPUT
+++D=REAL	N=Input	Ord=3	G=VAR_INPUT
+++D=REAL	N=Output	Ord=4	G=VAR_OUTPUT
+++D=REAL	N=Min_X	Ord=5	G=VAR_INPUT
+++D=REAL	N=Max_X	Ord=6	G=VAR_INPUT
+++D=REAL	N=Min_Y	Ord=7	G=VAR_INPUT
+++D=REAL	N=Max_Y	Ord=8	G=VAR_INPUT
+++D=INT	N=behavior_under_min_value	Ord=9	G=VAR_INPUT
+++D=INT	N=behavior_upper_max_value	Ord=10	G=VAR_INPUT
+++D=STRING[8]	N=Unit_X	Ord=11	G=VAR_INPUT
+++D=STRING[8]	N=Unit_Y	Ord=12	G=VAR_INPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

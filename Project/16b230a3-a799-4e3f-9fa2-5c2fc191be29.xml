@@ -1,0 +1,13 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=SINT	N=S	G=VAR	Com=Step of executing command
+++D=INT	N=Id_Local	G=VAR	Com=Local Id of this instance
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=THE\SERIAL	N=MySerial	Ord=0	G=VAR_IN_OUT	Com=Serial communication object
+++D=BOOL	N=SendDatas	Ord=1	G=VAR_INPUT	Com=Order to send datas
+++D=STRING[240]	N=Question	Ord=2	G=VAR_INPUT	Com=Datas to send
+++D=BOOL	N=Done	Ord=3	G=VAR_OUTPUT	Com=Datas are send
+++D=STRING[240]	N=Answer	Ord=4	G=VAR_OUTPUT	Com=Response of request
+++D=BOOL	N=Fault	Ord=5	G=VAR_OUTPUT	Com=An error has occurred
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

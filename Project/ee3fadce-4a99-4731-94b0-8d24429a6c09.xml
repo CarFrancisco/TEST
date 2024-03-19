@@ -1,0 +1,27 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=INT	N=Output	G=VAR
+++D=INT	N=Min_tol_out_open	G=VAR
+++D=INT	N=Max_tol_out_open	G=VAR
+++D=GazReg_Config_3	N=Standard_GazReg	G=VAR
+++D=INT	N=Command	G=VAR	Com=Analog command [0..4000]
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=THE_PNEUMATIC_ANALOG	N=MyGasReg	Ord=1	G=VAR_IN_OUT	Com=Gaz regulation object
+++D=THE\PNEUMATIC	N=MyValve_1	Ord=2	G=VAR_IN_OUT	Com=Valve for gas selection 1
+++D=THE\PNEUMATIC	N=MyValve_2	Ord=3	G=VAR_IN_OUT	Com=Valve for gas selection 2
+++D=THE\PNEUMATIC	N=MyValve_3	Ord=4	G=VAR_IN_OUT	Com=Valve for gas selection 3
+++D=BOOL	N=Active	Ord=5	G=VAR_INPUT
+++D=INT	N=Feedback	Ord=6	G=VAR_INPUT	Com=Analog input feedback value [0..4000]
+++D=BOOL	N=Cmd_IncreaseOpening	Ord=7	G=VAR_OUTPUT	Com=Digital output to increase opening
+++D=BOOL	N=Cmd_IncreaseClosing	Ord=8	G=VAR_OUTPUT	Com=Digital output to increase closing
+++D=BOOL	N=Error	Ord=9	G=VAR_OUTPUT	Com=Fault in gaz bloc
+++D=BOOL	N=Enabled	Ord=10	G=VAR_INPUT
+++D=STRING[8]	N=Unit	Ord=11	G=VAR_INPUT	Com=Unit use for the regulator of gas
+++D=REAL	N=Max_Cmd	Ord=12	G=VAR_INPUT	Com=Maximum value for 0-10V [u]
+++D=REAL	N=Max_User	Ord=13	G=VAR_INPUT	Com=Maximum value for user [u]
+++D=REAL	N=Tolerance	Ord=14	G=VAR_INPUT
+++D=BOOL	N=Commissioning	Ord=15	G=VAR_INPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=BOOL	N=T_200ms	G=VAR_EXTERNAL

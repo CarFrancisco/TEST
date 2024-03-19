@@ -1,0 +1,25 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=INT	N=i	G=VAR	Com=Indice for alarms list
+++D=BOOL	N=Modulo_Check	G=VAR	Com=Check overrun of modulo
+++D=BOOL	N=Speed_InRange	G=VAR	Com=When speed is in range
+++D=TON	N=Wait_NotInRange	G=VAR
+++D=REAL	N=Dist_100ms	G=VAR	Com=Simulated distance of product every 100ms
+++D=REAL	N=Modulo_Limit_High	G=VAR	Com=To enabled modulo reset (high limit)
+++D=REAL	N=Modulo_Limit_Low	G=VAR	Com=To enabled modulo reset (low limit)
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=THE\PROD	N=MyProd	Ord=1	G=VAR_IN_OUT	Com=Prod system to hnadle
+++D=BOOL	N=Enabled	Ord=2	G=VAR_INPUT	Com=Enabled prod system
+++D=REAL	N=LineSpeed_SP	Ord=3	G=VAR_INPUT	Com=Line speed setpoint [m/min]
+++D=BOOL	N=NoMouvement	Ord=4	G=VAR_OUTPUT	Com=Production system not working
+++D=REAL	N=Modulo	Ord=5	G=VAR_INPUT	Com=Modulo of axis ref [m]
+++D=BOOL	N=Modulo_Reset	Ord=6	G=VAR_OUTPUT	Com=Modulo is reseted
+++D=_sAXIS_REF	N=Axis_Ref	Ord=7	G=VAR_INPUT	Com=Axis of product mesurement
+++D=REAL	N=Axis_Factor	IV=1.0	Ord=8	G=VAR_INPUT	Com=Factor for axis
+++D=BOOL	N=Simu_En	Ord=9	G=VAR_INPUT	Com=Simulation of line speed
+++D=REAL	N=Simu_LineSpeed	Ord=10	G=VAR_INPUT	Com=Simulation line speed [m/min]
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=THE\PROD	N=Prod	G=VAR_EXTERNAL
+++D=BOOL	N=T_100ms	G=VAR_EXTERNAL

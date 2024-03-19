@@ -1,0 +1,34 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=TS_Config	N=Device1	G=VAR
+++D=TS_Config_OnSameAxis	N=Device2	G=VAR
+++D=TS_AddSwitch	N=AddFirstPitch	G=VAR
+++D=TS_Compensation	N=CompensePitch	G=VAR
+++D=TS_Output_Single	N=ApplyOutput	G=VAR
+++D=TS_AddSwitch	N=NextPitch	G=VAR
+++D=BOOL	N=StartCycle	G=VAR	Com=Order to start cyc.e
+++D=BOOL	N=UseCompensation	G=VAR
+++D=THE\TimeStamp_Switch	N=LastSwitch	G=VAR
+++D=REAL	N=NextPos	G=VAR	Com=LastSwitch + 100 [u]
+++D=TS_AddSwitch	N=AddDevice2	G=VAR
+++D=TS_Compensation	N=Compense2	G=VAR
+++D=TS_Output_Dual	N=OutDevice2	G=VAR
+++D=REAL	N=Device2_StartPos	G=VAR
+++D=REAL	N=DetectionPos	G=VAR
+++D=BOOL	N=Detection	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=THE\TIMESTAMP	N=TS_Device_1	G=VAR_EXTERNAL
+++D=THE\TIMESTAMP	N=TS_Device_2	G=VAR_EXTERNAL
+++D=ULINT	N=G99AP01_TSIn	G=VAR_EXTERNAL
+++D=ULINT	N=G99AP01_TSOut	G=VAR_EXTERNAL
+++D=BOOL	N=Device1_Output_Status	G=VAR_EXTERNAL
+++D=BOOL	N=Device1_Output	G=VAR_EXTERNAL
+++D=ULINT	N=Device1_Output_TS	G=VAR_EXTERNAL
+++D=BOOL	N=Device2_OutputA_Status	G=VAR_EXTERNAL
+++D=BOOL	N=Device2_OutputB_Status	G=VAR_EXTERNAL
+++D=BOOL	N=Device2_OutputA	G=VAR_EXTERNAL
+++D=BOOL	N=Device2_OutputB	G=VAR_EXTERNAL
+++D=ULINT	N=Device2_OutputA_TS	G=VAR_EXTERNAL
+++D=ULINT	N=Device2_OutputB_TS	G=VAR_EXTERNAL
+++D=_sAXIS_REF	N=Axis_Wheel	Const=1	G=VAR_EXTERNAL

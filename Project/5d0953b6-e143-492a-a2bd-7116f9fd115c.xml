@@ -1,0 +1,2 @@
+﻿{"CLs":[{"__type":"LD","Var":"Enabled"},{"__type":"ST","Ix":1,"Var":"ENO","X":1}],"CMT":"Config","LRI":2,"RRI":3,"VLs":[]}
+{"CLs":[{"__type":"LD","Id":"f9da6890-da93-454f-b699-097800000007","Up":true,"Var":"Enabled"},{"__type":"IST","EID":"9b69ac7e-98eb-45e6-b7ed-c214930a422e","H":93.000000000000057,"Ix":1,"TXT":"\/\/Power given to the laser (constant one)\u000d\u000aMyLaser.Cmd.Power := Power;","W":580,"X":1}],"CMT":"Power command","LRI":2,"RRI":3,"VLs":[]}

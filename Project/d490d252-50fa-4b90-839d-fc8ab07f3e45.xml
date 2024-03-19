@@ -1,0 +1,11 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=TON	N=T_ON	G=VAR
+++D=TON	N=T_OFF	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Activation	Ord=0	G=VAR_INPUT
+++D=TIME	N=TimeOn	Ord=1	G=VAR_INPUT
+++D=TIME	N=TimeOff	Ord=2	G=VAR_INPUT
+++D=BOOL	N=Output	Ord=3	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

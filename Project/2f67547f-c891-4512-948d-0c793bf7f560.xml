@@ -1,0 +1,13 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=THE\uWord	N=Granted	G=VAR	Com=Value of faut code
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=Sys_S_Structure	N=Sys_Master_S	Ord=1	G=VAR_IN_OUT	Com=Send structure of sysmetric with pump management
+++D=Sys_R_Structure	N=Sys_Master_R	Ord=2	G=VAR_IN_OUT	Com=Receive structure of sysmetric with pump management
+++D=Sys_S_Structure	N=Sys_Slave_S	Ord=3	G=VAR_IN_OUT	Com=Send structure of sysmetric
+++D=Sys_R_Structure	N=Sys_Slave_R	Ord=4	G=VAR_IN_OUT	Com=Receive structure of sysmetric
+++D=BOOL	N=Enabled	Ord=5	G=VAR_INPUT	Com=Enabled sysmetric calculation
+++D=USINT	N=Index	IV=0	Ord=6	G=VAR_INPUT	Com=Index of the sysmetric in manager [0..5]
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

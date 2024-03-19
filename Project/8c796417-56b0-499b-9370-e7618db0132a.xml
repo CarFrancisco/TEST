@@ -1,0 +1,39 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=Run	G=VAR	Com=Order to run the teaching sequence
+++D=_sSDO_ACCESS	N=SdoObj	G=VAR
+++D=USINT	N=MyStep	G=VAR	Com=Current step
+++D=UINT	N=NodeAdr	G=VAR
+++D=ULINT	N=Datas	G=VAR
+++D=BOOL	N=Read_B	G=VAR
+++D=BOOL	N=Read_E	G=VAR
+++D=WORD	N=Read_ID	G=VAR
+++D=DWORD	N=Read_AC	G=VAR
+++D=UINT	N=Read_Size	G=VAR
+++D=EC_CoESDORead	N=ReadParameter	G=VAR
+++D=BOOL	N=CurrentDirection	G=VAR
+++D=EC_CoESDOWrite	N=WriteParameter	G=VAR
+++D=BOOL	N=Write_B	G=VAR
+++D=BOOL	N=Write_E	G=VAR
+++D=WORD	N=Write_ID	G=VAR
+++D=DWORD	N=Write_AC	G=VAR
+++D=EC_CoESDOWrite	N=SaveParameter	G=VAR
+++D=BOOL	N=Save_B	G=VAR
+++D=BOOL	N=Save_E	G=VAR
+++D=WORD	N=Save_ID	G=VAR
+++D=DWORD	N=Save_AC	G=VAR
+++D=BOOL	N=Restart_B	G=VAR
+++D=BOOL	N=Restart_E	G=VAR
+++D=WORD	N=Restart_ID	G=VAR
+++D=BOOL	N=Pause	G=VAR
+++D=OmronLib\EC_1S\Restart_1S	N=Restart_Drive	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=_sAXIS_REF	N=Axis	Ord=0	Const=1	G=VAR_IN_OUT	Com=Axis to change direction
+++D=BOOL	N=Update	Ord=1	G=VAR_INPUT	Com=Order to change the direction
+++D=BOOL	N=Done	Ord=2	G=VAR_OUTPUT	Com=Direction is changed
+++D=BOOL	N=Busy	Ord=3	G=VAR_OUTPUT	Com=Teaching is busy
+++D=BOOL	N=Error	Ord=4	G=VAR_OUTPUT	Com=Teaching in fault
+++D=BOOL	N=Direction	Ord=5	G=VAR_INPUT	Com=Set as CW (=0) or CCW (=1)
+++D=BOOL	N=Commissioning	IV=True	Ord=6	G=VAR_INPUT	Com=Can only be done in commissioning
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

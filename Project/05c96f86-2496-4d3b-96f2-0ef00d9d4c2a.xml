@@ -1,0 +1,20 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=Started	G=VAR
+++D=BOOL	N=Test	G=VAR
+++D=INT	N=NbItem	G=VAR
+++D=REAL	N=SecLeft	G=VAR
+++D=TIME	N=TimeLeft2	G=VAR
+++D=REAL	N=DeltaTemp	G=VAR
+++D=REAL	N=HeatTime	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT	Com=Wake-up is enabled
+++D=EXU_Machines	N=Extruder	Ord=1	G=VAR_IN_OUT
+++D=ARRAY[0..15] OF THE\ZONE	N=Zone_Extruder	Ord=2	G=VAR_IN_OUT
+++D=SRX_Machines	N=Head	Ord=3	G=VAR_IN_OUT
+++D=ARRAY[0..5] OF THE\ZONE	N=Zone_Head	Ord=4	G=VAR_IN_OUT
+++D=BOOL	N=Enabled	Ord=5	G=VAR_INPUT	Com=The wake-up function can be used
+++D=THE\SCREEN	N=myHMI	Ord=6	G=VAR_INPUT	Com=HMI manager object
+++D=INT	N=Index	Ord=7	G=VAR_INPUT	Com=Extruder number (0-4)
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

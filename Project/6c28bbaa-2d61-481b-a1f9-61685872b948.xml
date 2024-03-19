@@ -1,0 +1,18 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=Run	G=VAR	Com=A switch is programmed
+++D=BOOL	N=Dir	G=VAR	Com=0= ( out1 OFF and out2 ON )  1= ( out1 ON and out2 OFF )
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=THE\TIMESTAMP	N=MyTS	Ord=0	G=VAR_IN_OUT	Com=Timestamp object
+++D=BOOL	N=Enabled	Ord=1	G=VAR_INPUT
+++D=BOOL	N=Done	Ord=2	G=VAR_OUTPUT	Com=The switch is done
+++D=BOOL	N=Output_Cmd_A	Ord=3	G=VAR_OUTPUT	Com=State to be applied on output - A
+++D=BOOL	N=Output_Sta_A	Ord=4	G=VAR_INPUT	Com=Order received and wait for execution - A
+++D=ULINT	N=Output_TS_A	Ord=5	G=VAR_IN_OUT	Com=Time to apply the command state on output [ns] - A
+++D=BOOL	N=Output_Cmd_B	Ord=6	G=VAR_OUTPUT	Com=State to be applied on output - B
+++D=BOOL	N=Output_Sta_B	Ord=7	G=VAR_INPUT	Com=Order received and wait for execution - B
+++D=ULINT	N=Output_TS_B	Ord=8	G=VAR_IN_OUT	Com=Time to apply the command state on output [ns] - B
+++D=THE\TimeStamp_Switch	N=SwitchDone	Ord=9	G=VAR_OUTPUT	Com=Last executed switch
+++D=BOOL	N=Invert	Ord=10	G=VAR_INPUT	Com=Invert output control
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

@@ -1,0 +1,26 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=INT	N=i	IV=0	G=VAR
+++D=BOOL	N=Ref_Bigger	G=VAR
+++D=BOOL	N=Ref_Smaller	G=VAR
+++D=INT	N=i_Max	G=VAR
+++D=REAL	N=Offset_Backup	IV=-9999	G=VAR	Com=Used to find offset update
+++D=REAL	N=Factor	G=VAR	Com=Length factor depanding of angle
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=THE\LASER	N=MyLaser	Ord=1	G=VAR_IN_OUT
+++D=BOOL	N=Enabled	Ord=2	G=VAR_INPUT
+++D=REAL	N=PowerDuring	Ord=3	G=VAR_INPUT	Com=Y1: Point 2
+++D=REAL	N=StartRampOffset1	Ord=4	G=VAR_INPUT	Com=X0: Point 1
+++D=REAL	N=StartRampOffset2	Ord=5	G=VAR_INPUT	Com=X1: Point 2
+++D=REAL	N=StartPower	Ord=6	G=VAR_INPUT	Com=Y0: Point 1
+++D=REAL	N=EndRampOffset1	Ord=7	G=VAR_INPUT	Com=X2: Point 3
+++D=REAL	N=EndRampOffset2	Ord=8	G=VAR_INPUT	Com=X3: Point 4
+++D=REAL	N=EndPower	Ord=9	G=VAR_INPUT	Com=Y2: Point 3
+++D=REAL	N=Ref	Ord=10	G=VAR_INPUT	Com=Reference (Speed or Position or etc..)
+++D=REAL	N=Angle	Ord=11	G=VAR_INPUT	Com=Angle of the head of laser
+++D=REAL	N=Length	Ord=12	G=VAR_INPUT	Com=Length of the band
+++D=REAL	N=Offset	Ord=13	G=VAR_INPUT	Com=Offset on Y axis [mm]
+++D=BOOL	N=InvertDirection	Ord=14	G=VAR_INPUT	Com=Invert the setpoints direction
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

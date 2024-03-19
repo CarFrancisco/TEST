@@ -1,0 +1,12 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=MC_HomeWithParameter	N=Servo_Home	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=_sAXIS_REF	N=Axis	Ord=0	Const=1	G=VAR_IN_OUT
+++D=THE\SERVO	N=Servo	Ord=1	G=VAR_IN_OUT	EC=<ECs><EC EK="Cmd.Stop" C=" " /></ECs>
+++D=_sHOMING_REF	N=HomingParameter	Ord=2	G=VAR_IN_OUT
+++D=BOOL	N=Enabled	Ord=3	G=VAR_INPUT
+++D=BOOL	N=Done	Ord=4	G=VAR_OUTPUT
+++D=BOOL	N=Ready	Ord=5	G=VAR_OUTPUT	Com=Homing function is ready
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

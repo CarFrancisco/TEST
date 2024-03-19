@@ -1,0 +1,15 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=THE\TimeStamp_Switch	N=Switch	G=VAR
+++D=REAL	N=TravelDist	G=VAR	Com=Travel distance to reach the switch ON [u]
+++D=REAL	N=TravelTime	G=VAR	Com=Travel time to reach the switch [s]
+++D=BOOL	N=AddSwitch	G=VAR	Com=Order to add a switch
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT	Com=Switch added
+++D=THE\TIMESTAMP	N=MyTS	Ord=1	G=VAR_IN_OUT	Com=Timestamp object
+++D=BOOL	N=NewSwitch	E=UpDirection	Ord=2	G=VAR_INPUT	Com=Add a new switch
+++D=REAL	N=PosStart	Ord=3	G=VAR_INPUT	Com=Position to switch On [mm]
+++D=BOOL	N=PosAbs	Ord=4	G=VAR_INPUT	Com=Rel: the position is added from the actual position. Abs: The target position
+++D=REAL	N=Length	Ord=5	G=VAR_INPUT	Com=Length of switch On [mm]
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

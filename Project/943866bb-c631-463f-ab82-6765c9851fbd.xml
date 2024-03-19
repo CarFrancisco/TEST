@@ -1,0 +1,15 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=REAL	N=Val_Calc	G=VAR
+++D=BOOL	N=IsNan	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=THE\EFD	N=MyEFD	Ord=1	G=VAR_IN_OUT	Com=EFD object
+++D=BOOL	N=Enabled	Ord=2	G=VAR_INPUT	Com=Enabled computation
+++D=REAL	N=Ref1	Ord=3	G=VAR_INPUT	Com=X0: Referance 1 on X axis [x]
+++D=REAL	N=PowerAt_Ref1	Ord=4	G=VAR_INPUT	Com=Y0: Power at reference 1 [W]
+++D=REAL	N=Ref2	Ord=5	G=VAR_INPUT	Com=X1: Referance 2 on X axis [x]
+++D=REAL	N=PowerAt_Ref2	Ord=6	G=VAR_INPUT	Com=Y1: Power at reference 2 [W]
+++D=REAL	N=Ref	Ord=7	G=VAR_INPUT	Com=Reference (Speed or Position or etc..) [x]
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

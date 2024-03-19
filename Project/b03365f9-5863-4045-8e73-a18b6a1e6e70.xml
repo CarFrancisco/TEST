@@ -1,0 +1,9 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=ReceiveOrder	G=VAR	Com=Order received
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=THE\LASER	N=MyLaser	Ord=0	G=VAR_IN_OUT
+++D=BOOL	N=Reset	Ord=1	G=VAR_INPUT	Com=Order to reset the laser
+++D=BOOL	N=Resetted	Ord=2	G=VAR_OUTPUT	Com=Is resetted
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

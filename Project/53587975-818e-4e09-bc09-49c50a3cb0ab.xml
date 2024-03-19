@@ -1,0 +1,26 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=Sensor_Simple	N=Config_Simple	G=VAR
+++D=Sensor_ToAnalog	N=Config_ToAnalog	G=VAR
+++D=BOOL	N=DI_Sensor_1	G=VAR
+++D=THE\SENSOR	N=Sneor_2	G=VAR
+++D=BOOL	N=DI_Sensor_2	G=VAR
+++D=TIME	N=T	G=VAR
+++D=Sensor_Filtered	N=Config_Filtred	G=VAR
+++D=Sensor_Analog	N=Config_Analog	G=VAR
+++D=BOOL	N=DI_Sensor_3	G=VAR
+++D=Sensor_Simple_WithBuzzer	N=Config_SimpleWithBuzzer	G=VAR
+++D=BOOL	N=DI_Sensor_5	G=VAR
+++D=Sensor_WithBuzzer	N=Sensor2ToBuzzer	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=BOOL	N=Info_General	G=VAR_EXTERNAL
+++D=THE\SENSOR	N=Sensor_1	G=VAR_EXTERNAL
+++D=THE\SENSOR	N=Sensor_2	G=VAR_EXTERNAL
+++D=BOOL	N=Info_ToDo	G=VAR_EXTERNAL
+++D=THE\SENSOR	N=Sensor_3	G=VAR_EXTERNAL
+++D=THE\SENSOR	N=Sensor_4	G=VAR_EXTERNAL
+++D=ARRAY[0..1] OF BYTE	N=AD_FromILM	G=VAR_EXTERNAL
+++D=BOOL	N=Commissioning	G=VAR_EXTERNAL
+++D=THE\SENSOR	N=Sensor_5	G=VAR_EXTERNAL
+++D=THE\BUZZER	N=Buzzer	G=VAR_EXTERNAL

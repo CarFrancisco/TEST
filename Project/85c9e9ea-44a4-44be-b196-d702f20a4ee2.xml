@@ -1,0 +1,28 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=Sysmetric_Config_FINS	N=Sys_WithFINS	G=VAR
+++D=Sysmetric_Config_EIP	N=Sys_WithEIP	G=VAR
+++D=REAL	N=LineSpeed	G=VAR	Com=Current line speed [m/min]
+++D=BOOL	N=S_M50_ES	G=VAR	Com=ES input from safety
+++D=BOOL	N=Extruder_Run	G=VAR
+++D=REAL	N=Speed_Cmd	G=VAR	Com=Speed command of extruder after ramp [rpm]
+++D=REAL	N=Speed_Analog	G=VAR	Com=Speed command of extruder after ramp [0..4000]
+++D=REAL	N=Speed_Max	G=VAR	Com=Maximum speed of extruder [rpm]
+++D=REAL	N=Overspeed	G=VAR	Com=Overspeed command
+++D=BOOL	N=M50_Used	G=VAR
+++D=Inverter_MoveVelocity	N=Motor_Extruder	G=VAR
+++D=Sysmetric_Overall	N=SysManager	G=VAR
+++D=Sysmetric_VacuumRequest	N=VacuumRequest_M52	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=THE\SYSMETRIC	N=SYS	G=VAR_EXTERNAL
+++D=Sys_S_Structure	N=M50_S	G=VAR_EXTERNAL
+++D=Sys_S_Structure	N=M51_S	G=VAR_EXTERNAL
+++D=Sys_R_Structure	N=M51_R	G=VAR_EXTERNAL
+++D=EXU_Machines	N=M40	G=VAR_EXTERNAL
+++D=THE\STATUS	N=M50_Status	G=VAR_EXTERNAL
+++D=THE\STATUS	N=M51_Status	G=VAR_EXTERNAL
+++D=THE\INVERTER	N=Inv_M40_Motor	G=VAR_EXTERNAL
+++D=Sys_S_Structure	N=M52_S	G=VAR_EXTERNAL
+++D=Sys_R_Structure	N=M52_R	G=VAR_EXTERNAL
+++D=BOOL	N=Info_ToDo	G=VAR_EXTERNAL

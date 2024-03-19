@@ -1,0 +1,21 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=LREAL	N=Vitesse	IV=3600	G=VAR
+++D=BOOL	N=Simu_Spool	G=VAR
+++D=MC_MoveVelocity	N=Velocity	G=VAR
+++D=MC_Stop	N=StopVelocity	G=VAR
+++D=MC_Traversing	N=RunTraversing	G=VAR
+++D=REAL	N=Pos_M	IV=10	G=VAR	Com=Minimum position of traversing [mm]
+++D=REAL	N=Pos_O	IV=100	G=VAR	Com=Maximum position of traversing [mm]
+++D=REAL	N=Stop_M	IV=120	G=VAR	Com=Wait angle at minimum position [°]
+++D=REAL	N=Stop_O	IV=120	G=VAR	Com=Wait angle at maximum position [°]
+++D=REAL	N=Pitch	IV=2.5	G=VAR	Com=Traversing pitch [mm]
+++D=BOOL	N=PauseOrder	G=VAR
+++D=BOOL	N=TestTraversing	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=ARRAY[0..110] OF _sMC_CAM_REF	N=Cam_Traversing	G=VAR_EXTERNAL
+++D=_sAXIS_REF	N=Axis_Wheel	Const=1	G=VAR_EXTERNAL
+++D=_sAXIS_REF	N=Axis_Linear	Const=1	G=VAR_EXTERNAL
+++D=_sMC_CAM_PROPERTY	N=Cam_Property	G=VAR_EXTERNAL
+++D=ARRAY[0..7] OF _sMC_CAM_NODE	N=Cam_Node	G=VAR_EXTERNAL

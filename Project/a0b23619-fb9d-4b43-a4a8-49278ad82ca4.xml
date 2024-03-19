@@ -1,0 +1,44 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=USINT	N=wStatus	IV=0	G=VAR
+++D=USINT	N=ST_IDLE	IV=0	Const=1	G=VAR
+++D=USINT	N=ST_INIT	IV=1	Const=1	G=VAR
+++D=USINT	N=ST_EXEC	IV=2	Const=1	G=VAR
+++D=USINT	N=ST_DONE	IV=18	Const=1	G=VAR
+++D=USINT	N=ST_ERR	IV=19	Const=1	G=VAR
+++D=R_TRIG	N=R_TRIG_inst	G=VAR
+++D=OmronLib\EC_1S\SubParts\ReadDevice	N=ReadDevice_inst	G=VAR
+++D=EC_CoESDOWrite	N=EC_CoESDOWrite_inst	G=VAR
+++D=EC_CoESDORead	N=EC_CoESDORead_inst	G=VAR
+++D=TON	N=TON_inst	G=VAR
+++D=BOOL	N=trigExec	G=VAR
+++D=BOOL	N=wExec_ReadDev	G=VAR
+++D=BOOL	N=wExec_SDOWrite	G=VAR
+++D=BOOL	N=wExec_SDORead	G=VAR
+++D=BOOL	N=wExec_TON	G=VAR
+++D=WORD	N=wErrID	G=VAR
+++D=DWORD	N=wErrIDEx	G=VAR
+++D=UINT	N=wNodeAdr	G=VAR
+++D=UINT	N=wTimeOut	G=VAR
+++D=ARRAY[0..31] OF BYTE	N=wReadDat	G=VAR
+++D=USINT	N=wReadNo	G=VAR
+++D=UDINT	N=ReadErrCode	G=VAR
+++D=STRING[17]	N=SerialNo	G=VAR
+++D=STRING[17]	N=LastSerialNo	G=VAR
+++D=WORD	N=cMyErrID	IV=16#3CEE	Const=1	G=VAR
+++D=UDINT	N=cVenderID	IV=16#00000083	Const=1	G=VAR
+++D=ARRAY[0..1] OF _sSDO_ACCESS	N=cSdoObjRead	IV=[(Index := 16#4410, Subindex := 16#82, IsCompleteAccess := False), (Index := 16#4410, Subindex := 16#84, IsCompleteAccess := False)]	Const=1	G=VAR
+++D=_sSDO_ACCESS	N=cSdoObjWrite	IV=(Index := 16#4410, Subindex := 16#F1, IsCompleteAccess := False)	Const=1	G=VAR
+++D=DWORD	N=cWriteDat	IV=16#7465736D	Const=1	G=VAR
+++D=UDINT	N=cChangeSarvo	IV=16#387C0000	Const=1	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Execute	IV=False	Ord=0	G=VAR_INPUT
+++D=UINT	N=NodeAdr	IV=1	Ord=1	G=VAR_INPUT
+++D=UINT	N=TimeOut	IV=0	Ord=2	G=VAR_INPUT
+++D=BOOL	N=Done	Ord=3	G=VAR_OUTPUT
+++D=BOOL	N=Busy	Ord=4	G=VAR_OUTPUT
+++D=BOOL	N=Error	Ord=5	G=VAR_OUTPUT
+++D=WORD	N=ErrorID	Ord=6	G=VAR_OUTPUT
+++D=DWORD	N=ErrorIDEx	Ord=7	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

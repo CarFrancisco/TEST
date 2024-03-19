@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <GeneralSettingsData TaskExecutionCondition="2000" ExecutionPriority="4" CycleTimeOverDetection="Warning" TimeOutValue="10000" VariableAccessTimeRatio="3">
+    <ExecutionConditionVariable VariableName="" Condition="" Constant="" />
+    <ExecutionConditionCJUnit ExternalInputUnit="">
+      <ExecutionConditionInterruptionUnit UnitNumber="" InputContact="" EdgeDetection="" />
+      <ExecutionConditionSiouCpuUnit CJUnitTaskNo="" />
+    </ExecutionConditionCJUnit>
+  </GeneralSettingsData>
+  <Programs />
+  <RefreshUnitIds>
+    <RefreshUnitId RefreshUnitId="26722b22-f9cd-44ab-9246-d28fd46e1665" />
+    <RefreshUnitId RefreshUnitId="e431a163-5a5a-429f-a852-b9b12968d7f7" />
+    <RefreshUnitId RefreshUnitId="0af983ab-5e0b-40bf-a77b-6e71541d0e61" />
+    <RefreshUnitId RefreshUnitId="7c6ac62e-51a8-4772-85b8-47369a945107" />
+  </RefreshUnitIds>
+  <TaskInterfaceVariables version="1" />
+</data>

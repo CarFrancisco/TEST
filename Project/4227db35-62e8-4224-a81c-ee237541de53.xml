@@ -1,0 +1,21 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=Alarm_Begin	G=VAR
+++D=BOOL	N=Alarm_Stop	G=VAR
+++D=INT	N=Pos	G=VAR	Com=Position of currant alarm in alarms list
+++D=INT	N=Pos_Last	IV=-1	G=VAR	Com=Position of last alarm in alarms list
+++D=INT	N=i	G=VAR	Com=Indice for alarms list
+++D=BOOL	N=Alarm_Occur	G=VAR
+++D=REAL	N=tmp_NewPos	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=THE\PROD	N=MyProd	Ord=1	G=VAR_IN_OUT
+++D=BOOL	N=Command	Ord=2	G=VAR_IN_OUT	Com=Link the alarm command with BCC command
+++D=USINT	N=Id	Ord=3	G=VAR_INPUT
+++D=BOOL	N=Enabled	Ord=4	G=VAR_INPUT
+++D=BOOL	N=Alarms	Ord=5	G=VAR_INPUT	Com=Alarm generator
+++D=REAL	N=Distance	IV=0.0	Ord=6	G=VAR_INPUT	Com=Length beetwen the alarm generator and the coiller [m]
+++D=REAL	N=Befor	IV=0.0	Ord=7	G=VAR_INPUT	Com=Length before alarm considered as bad product [m]
+++D=REAL	N=After	IV=0.0	Ord=8	G=VAR_INPUT	Com=Length after alarm considered as bad product [m]
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

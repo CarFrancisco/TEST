@@ -1,0 +1,9 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=ReceiveOrder	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=THE_PNEUMATIC_ANALOG	N=My_Gaz_Reg	Ord=0	G=VAR_IN_OUT
+++D=BOOL	N=Stop	Ord=1	G=VAR_INPUT
+++D=BOOL	N=IsIn	Ord=2	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

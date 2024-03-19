@@ -1,0 +1,23 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=ULINT	N=NewTS_On	G=VAR	Com=New TS to On with compensation [ns]
+++D=ULINT	N=NewTS_Off	G=VAR	Com=New TS to Off with compensation [ns]
+++D=REAL	N=Travel_Dist_On	G=VAR	Com=Travel distance to reach the switch SET [u]
+++D=REAL	N=Travel_Dist_Off	G=VAR	Com=Travel distance to reach the switch RESET [u]
+++D=REAL	N=Travel_Time_On	G=VAR	Com=Travel time to reach the switch SET [s]
+++D=REAL	N=Travel_Time_Off	G=VAR	Com=Travel time to reach the switch RESET [s]
+++D=ULINT	N=Travel_TS_On	G=VAR	Com=New computed TS to switch SET [ns]
+++D=ULINT	N=Travel_TS_Off	G=VAR	Com=New computed TS to switch RESET [ns]
+++D=BOOL	N=Update_On	G=VAR	Com=Update On timestamp
+++D=BOOL	N=Update_Off	G=VAR	Com=Update Off timestamp
+++D=BOOL	N=Run_Dual	G=VAR	Com=Run dual update compensation
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT	Com=Compensation is running
+++D=THE\TIMESTAMP	N=MyTS	Ord=1	G=VAR_IN_OUT	Com=Timestamp object
+++D=BOOL	N=Enable	Ord=2	G=VAR_INPUT	Com=Compensate output TS
+++D=DINT	N=DeltaTS_On	Ord=3	G=VAR_OUTPUT	Com=Diffrence between first TS "On" computation and the current one [±ns]
+++D=DINT	N=AvgTS_On	Ord=4	G=VAR_OUTPUT	Com=Average of "On" deltra TS [±ns]
+++D=DINT	N=DeltaTS_Off	Ord=5	G=VAR_OUTPUT	Com=Diffrence between first TS "Off" computation and the current one [±ns]
+++D=DINT	N=AvgTS_Off	Ord=6	G=VAR_OUTPUT	Com=Average of "Off" deltra TS [±ns]
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

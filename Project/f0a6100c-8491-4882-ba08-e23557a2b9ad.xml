@@ -1,0 +1,19 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=UDINT	N=Weight_Old	G=VAR	Com=Backup of accumalor material 1
+++D=UDINT	N=Weight_Sum	G=VAR
+++D=INT	N=Consumption_Old	G=VAR	Com=Backup of consumption
+++D=REAL	N=Consumption_Work	G=VAR	Com=Current onsumption [g/m]
+++D=REAL	N=Factor_Old	G=VAR	Com=Backup of factor
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT	Com=Machine is used
+++D=THE\Sysmetric	N=Mgr	Ord=1	G=VAR_IN_OUT	Com=Global sysmetric manager
+++D=SINT	N=Index	IV=-1	Ord=2	G=VAR_INPUT	Com=Index of the sysmetric in manager [0..5]
+++D=Sys_S_Structure	N=Sys_S	Ord=3	G=VAR_INPUT	Com=Send structure of sysmetric
+++D=BOOL	N=Enabled	Ord=4	G=VAR_INPUT	Com=Enabled sysmetric calculation
+++D=THE\STATUS	N=Sta	Ord=5	G=VAR_OUTPUT	Com=Machine status
+++D=BOOL	N=Local_ES	Ord=6	G=VAR_INPUT	Com=Local ES of machine
+++D=BOOL	N=NetworkFault	Ord=7	G=VAR_INPUT	Com=Network fault of machine
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=BOOL	N=T_1s	G=VAR_EXTERNAL

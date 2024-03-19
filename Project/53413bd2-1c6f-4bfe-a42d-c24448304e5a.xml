@@ -1,0 +1,8 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=Pneu_Config_Cylinder_SimpleActing	N=M	G=VAR
+++D=BOOL	N=Out_Cylinder_1	G=VAR
+++D=Pneu_Config_Cylinder_SimpleActing	N=Config_SimpleActing	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=THE\PNEUMATIC	N=Pneu_Cylinder_1	G=VAR_EXTERNAL

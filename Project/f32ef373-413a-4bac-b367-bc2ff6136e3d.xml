@@ -1,0 +1,61 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=Power_Request	G=VAR	Com=Request power of drive
+++D=BOOL	N=Power_Interlock	G=VAR	Com=Force the drive to be unpowered
+++D=MC_Power	N=Servo_Power	G=VAR
+++D=MC_InitEncoder_1S	N=Servo_Init	G=VAR
+++D=BOOL	N=Init_PR_Request	G=VAR	Com=Power request for init encoder
+++D=BOOL	N=Init_PI_Request	G=VAR	Com=Power interlock for init encoder
+++D=MC_MoveJog	N=Servo_Jog	G=VAR
+++D=MC_MoveAbsolute	N=Servo_MoveAbs	G=VAR
+++D=MC_MoveRelative	N=Servo_MoveRel	G=VAR
+++D=BOOL	N=Run	G=VAR
+++D=LREAL	N=Jog_Acc	G=VAR
+++D=LREAL	N=Jog_Dec	G=VAR
+++D=BOOL	N=Jog_Busy	G=VAR
+++D=BOOL	N=Jog_CMDAborted	G=VAR
+++D=BOOL	N=Jog_Error	G=VAR
+++D=WORD	N=Jog_ErroID	G=VAR
+++D=MC_MoveVelocity	N=Servo_MoveVel	G=VAR
+++D=_eMC_DIRECTION	N=Vel_Direction	G=VAR
+++D=LREAL	N=Vel_Velocity	G=VAR
+++D=LREAL	N=Rel_Velocity	G=VAR
+++D=LREAL	N=Abs_Velocity	G=VAR
+++D=MC_Stop	N=Servo_Stop	G=VAR
+++D=_sSDO_ACCESS	N=SdoObj	G=VAR
+++D=_sSDO_ACCESS	N=SdoObj1	G=VAR
+++D=DWORD	N=BrakeHeld	G=VAR
+++D=DWORD	N=BrakeReleased	G=VAR
+++D=DWORD	N=BitMask	G=VAR
+++D=EC_CoESDOWrite	N=FB_EC_CoESDOBKIR	G=VAR
+++D=EC_CoESDOWrite	N=FB_EC_CoESDOBKIR1	G=VAR
+++D=MC_Home	N=Servo_Home	G=VAR
+++D=BOOL	N=Home_B	G=VAR
+++D=BOOL	N=Home_CA	G=VAR
+++D=BOOL	N=Home_E	G=VAR
+++D=WORD	N=Home_ID	G=VAR
+++D=BOOL	N=Force_Home	G=VAR
+++D=MC_Reset	N=Servo_Reset	G=VAR
+++D=BOOL	N=Brake_Init	G=VAR	Com=Brake is initalized
+++D=EC_CoESDOWrite	N=FB_EC_CoESDOBKIR_Init	G=VAR
+++D=EC_CoESDOWrite	N=FB_EC_CoESDOBitMask	G=VAR
+++D=MC_Reset	N=Order_Reset	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=_sAXIS_REF	N=Axis	Ord=0	Const=1	G=VAR_IN_OUT
+++D=THE\SERVO	N=Servo	Ord=1	G=VAR_IN_OUT	EC=<ECs><EC EK="Cmd.Stop" C=" " /></ECs>
+++D=WORD	N=Error_Code	Ord=2	G=VAR_INPUT	Com=Put error code from I/O map
+++D=BOOL	N=Powered	Ord=3	G=VAR_OUTPUT	Com=Drive is servolocked
+++D=BOOL	N=Power	Ord=4	G=VAR_INPUT	Com=Put drive in servolock
+++D=BOOL	N=Active	Ord=5	G=VAR_INPUT
+++D=BOOL	N=Enabled	Ord=6	G=VAR_INPUT
+++D=_eMC_DIRECTION	N=Abs_Direction	Ord=7	G=VAR_INPUT
+++D=BOOL	N=Brake_Used	Ord=8	G=VAR_INPUT
+++D=LREAL	N=Position_Max	IV=1	Ord=9	G=VAR_INPUT	Com=Maximum postion for IAG [u]
+++D=LREAL	N=Position_Min	IV=1	Ord=10	G=VAR_INPUT	Com=Minimum postion for IAG [u]
+++D=LREAL	N=Velocity_Max	IV=1	Ord=11	G=VAR_INPUT	Com=Maximum speed for IAG [u/s]
+++D=LREAL	N=Acceleration_Max	IV=100	Ord=12	G=VAR_INPUT	Com=Maximum acceleration for IAG [u/s²]
+++D=BOOL	N=Commissioning	Ord=13	G=VAR_INPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=BOOL	N=_EC_PDActive	Const=1	G=VAR_EXTERNAL
+++D=ARRAY[1..192] OF BOOL	N=_EC_MBXSlavTbl	Const=1	G=VAR_EXTERNAL

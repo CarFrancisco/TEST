@@ -1,0 +1,51 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=INT	N=Power_Temp	G=VAR
+++D=REAL	N=Power_SP_WithLimit	G=VAR
+++D=REAL	N=Power_WithCorr	G=VAR
+++D=REAL	N=Power_FB	G=VAR
+++D=BOOL	N=Tmp	G=VAR
+++D=TP	N=Laser_On	G=VAR
+++D=TP	N=Laser_Off	G=VAR
+++D=BOOL	N=Interface_Assigned	G=VAR	Com=Interface is assigned
+++D=BYTE	N=Prog_Backup	G=VAR	Com=Old program selected
+++D=BOOL	N=Prog_Changed	G=VAR	Com=Program as changed
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=THE\LASER	N=MyLaser	Ord=0	G=VAR_IN_OUT
+++D=INT	N=L_Power_FB	Ord=1	G=VAR_INPUT	Com=The power feedback [0..4000]
+++D=INT	N=L_Power_SP	Ord=2	G=VAR_OUTPUT	Com=The power setpoint [0..4000]
+++D=BOOL	N=ENO	Ord=3	RO=1	G=VAR_OUTPUT
+++D=BOOL	N=Enabled	Ord=4	G=VAR_INPUT	Com=This laser is really present?
+++D=BOOL	N=L_Assigned	Ord=5	G=VAR_INPUT	Com=Laser is assigned
+++D=BOOL	N=L_SIK	Ord=6	G=VAR_INPUT	Com=Safety circuit open
+++D=BOOL	N=L_IsOn	Ord=7	G=VAR_INPUT	Com=Laser is on
+++D=BOOL	N=L_Ready	Ord=8	G=VAR_INPUT	Com=Laser ready
+++D=BOOL	N=L_PulseReady	Ord=9	G=VAR_INPUT	Com=Laser ready to pulse
+++D=BOOL	N=L_Pulse	Ord=10	G=VAR_INPUT	Com=Laser is pulsing
+++D=BOOL	N=L_Fault	Ord=11	G=VAR_INPUT	Com=Laser ready to pulse
+++D=BOOL	N=L_ExterneOn	Ord=12	G=VAR_INPUT	Com=Laser ready to pulse
+++D=BOOL	N=L_ProgActive	Ord=13	G=VAR_INPUT	Com=Laser program active
+++D=REAL	N=Power_Max	Ord=14	G=VAR_INPUT	Com=Power maximum of laser [W] 
+++D=BOOL	N=Manual	Ord=15	G=VAR_INPUT	Com=Force manuel use of laser
+++D=BOOL	N=Pilot	Ord=16	G=VAR_INPUT	Com=Activate the pilot laser
+++D=BOOL	N=Continus	Ord=17	G=VAR_INPUT	Com=Laser is used in continus or in program
+++D=BOOL	N=UseAssignment	IV=True	Ord=18	G=VAR_INPUT	Com=Use laser request and assigned feedback
+++D=BOOL	N=Commissioning	Ord=19	G=VAR_INPUT	Com=Put Laser in commissioning
+++D=BOOL	N=L_RequestLaser	Ord=20	G=VAR_OUTPUT	Com=Laser request
+++D=BOOL	N=L_ExternalControl	Ord=21	G=VAR_OUTPUT	Com=External control
+++D=BOOL	N=L_LaserOn	Ord=22	G=VAR_OUTPUT	Com=Turn on laser
+++D=BOOL	N=L_Standby	Ord=23	G=VAR_OUTPUT	Com=Standby mode
+++D=BOOL	N=L_Prog_0	Ord=24	G=VAR_OUTPUT	Com=Laser program - bit 0
+++D=BOOL	N=L_Prog_1	Ord=25	G=VAR_OUTPUT	Com=Laser program - bit 1
+++D=BOOL	N=L_Prog_2	Ord=26	G=VAR_OUTPUT	Com=Laser program - bit 2
+++D=BOOL	N=L_Prog_3	Ord=27	G=VAR_OUTPUT	Com=Laser program - bit 3
+++D=BOOL	N=L_Prog_4	Ord=28	G=VAR_OUTPUT	Com=Laser program - bit 4
+++D=BOOL	N=L_Prog_5	Ord=29	G=VAR_OUTPUT	Com=Laser program - bit 5
+++D=BOOL	N=L_Prog_6	Ord=30	G=VAR_OUTPUT	Com=Laser program - bit 6
+++D=BOOL	N=L_PilotOn	Ord=31	G=VAR_OUTPUT	Com=Pilot laser is On
+++D=BOOL	N=L_ProgStart	Ord=32	G=VAR_OUTPUT	Com=Static start program
+++D=BOOL	N=L_ProgDyn	Ord=33	G=VAR_OUTPUT	Com=Dynamic start program
+++D=BOOL	N=L_ProgStop	Ord=34	G=VAR_OUTPUT	Com=Stop static program
+++D=BOOL	N=L_Reset	Ord=35	G=VAR_OUTPUT	Com=Reset laser
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

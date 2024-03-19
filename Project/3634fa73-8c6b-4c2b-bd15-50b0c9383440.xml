@@ -1,0 +1,69 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR_GLOBAL	GVT=GlobalNamespaceGroup
+++D=BOOL	N=Info_General	G=VAR_GLOBAL	Com=Rung with general information about an object
+++D=BOOL	N=Info_Struct	G=VAR_GLOBAL	Com=Rung with information on object structure
+++D=BOOL	N=Info_ToDo	G=VAR_GLOBAL	Com=To do....
+++D=BOOL	N=Commissioning	G=VAR_GLOBAL	Com=Commissioning order
+++D=BOOL	N=T_100ms	G=VAR_GLOBAL	Com=Flag 100ms
+++D=BOOL	N=T_1s	G=VAR_GLOBAL	Com=Flag 1s
+++D=BOOL	N=T_200ms	G=VAR_GLOBAL	Com=Flag 200ms
+++D=_sAXIS_REF	N=Axis_Wheel	AT=MC://_MC_AX[0]	RO=1	Const=1	G=VAR_GLOBAL
+++D=_sAXIS_REF	N=Axis_Linear	AT=MC://_MC_AX[1]	RO=1	Const=1	G=VAR_GLOBAL
+++D=THE\TIMESTAMP	N=TS_Device_1	G=VAR_GLOBAL	Com=Fist device - 1 output
+++D=THE\TIMESTAMP	N=TS_Device_2	G=VAR_GLOBAL	Com=Second device - 2 outputs
+++D=THE\BUZZER	N=Buzzer	R=1	G=VAR_GLOBAL
+++D=THE\INVERTER	N=Inv_M40_Motor	G=VAR_GLOBAL	Com=Second device - 2 outputs
+++D=THE\PROD	N=Prod	R=1	G=VAR_GLOBAL
+++D=THE\SENSOR	N=Sensor_1	G=VAR_GLOBAL	Com=Sensor object 1
+++D=THE\SENSOR	N=Sensor_2	G=VAR_GLOBAL	Com=Sensor object 2
+++D=THE\SENSOR	N=Sensor_3	G=VAR_GLOBAL	Com=Sensor object 3
+++D=THE\SENSOR	N=Sensor_4	G=VAR_GLOBAL	Com=Sensor object 4
+++D=THE\SENSOR	N=Sensor_5	G=VAR_GLOBAL	Com=Sensor object 5
+++D=THE\SERIAL	N=Serial_Device	G=VAR_GLOBAL	Com=Serial object
+++D=THE\SYSMETRIC	N=SYS	G=VAR_GLOBAL	Com=Second device - 2 outputs
+++D=THE\PNEUMATIC	N=Pneu_Cylinder_1	G=VAR_GLOBAL	Com=Cylinder object 1
+++D=THE\PNEUMATIC	N=Pneu_Cylinder_2	G=VAR_GLOBAL	Com=Cylinder object 2
+++D=THE\PNEUMATIC	N=Pneu_Cylinder_3	G=VAR_GLOBAL	Com=Cylinder object 3
+++D=ARRAY[0..110] OF _sMC_CAM_REF	N=Cam_Traversing	IV=None	RO=1	G=VAR_GLOBAL
+++D=EXU_Machines	N=M40	R=1	G=VAR_GLOBAL	Com=An extruder
+++D=Sys_S_Structure	N=M50_S	AT=%E0_2152	R=1	NTP=PublicationInput	G=VAR_GLOBAL	Com=Received status from sysmetric M50 - FINS
+++D=THE\STATUS	N=M50_Status	G=VAR_GLOBAL	Com=Status of M50
+++D=Sys_R_Structure	N=M51_R	R=1	NTP=PublicationOutput	G=VAR_GLOBAL	Com=Send command to sysmetric M51 - EIP
+++D=Sys_S_Structure	N=M51_S	NTP=PublicationInput	G=VAR_GLOBAL	Com=Received status from sysmetric M51 - EIP
+++D=THE\STATUS	N=M51_Status	G=VAR_GLOBAL	Com=Status of M51
+++D=Sys_R_Structure	N=M52_R	R=1	NTP=PublicationOutput	G=VAR_GLOBAL	Com=Send command to sysmetric M52 - EIP
+++D=Sys_S_Structure	N=M52_S	NTP=PublicationInput	G=VAR_GLOBAL	Com=Received status from sysmetric M52 - EIP
+++D=_sMC_CAM_PROPERTY	N=Cam_Property	R=1	RO=1	G=VAR_GLOBAL
+++D=ARRAY[0..7] OF _sMC_CAM_NODE	N=Cam_Node	R=1	RO=1	G=VAR_GLOBAL
+++D=ARRAY[0..1] OF BYTE	N=AD_FromILM	AT=ECAT://node#1/Port1 Input Data01	G=VAR_GLOBAL
+++D=BOOL	N=Device1_Output	AT=IOBus://unit#1/Output Bit 00	G=VAR_GLOBAL
+++D=BOOL	N=Device1_Output_Status	AT=IOBus://unit#1/Output Bit 00 Output Status	G=VAR_GLOBAL
+++D=ULINT	N=Device1_Output_TS	AT=IOBus://unit#1/Output Bit 00 Time Stamp	G=VAR_GLOBAL
+++D=BOOL	N=Device2_OutputA	AT=IOBus://unit#2/Output Bit 00	G=VAR_GLOBAL
+++D=BOOL	N=Device2_OutputA_Status	AT=IOBus://unit#2/Output Bit 00 Output Status	G=VAR_GLOBAL
+++D=ULINT	N=Device2_OutputA_TS	AT=IOBus://unit#2/Output Bit 00 Time Stamp	G=VAR_GLOBAL
+++D=BOOL	N=Device2_OutputB	AT=IOBus://unit#2/Output Bit 01	G=VAR_GLOBAL
+++D=BOOL	N=Device2_OutputB_Status	AT=IOBus://unit#2/Output Bit 01 Output Status	G=VAR_GLOBAL
+++D=ULINT	N=Device2_OutputB_TS	AT=IOBus://unit#2/Output Bit 01 Time Stamp	G=VAR_GLOBAL
+++D=ULINT	N=G99AP01_TSIn	AT=IOBus://unit#1/Time Stamp of Synchronous Input	G=VAR_GLOBAL
+++D=ULINT	N=G99AP01_TSOut	AT=IOBus://unit#1/TimeStamp of Synchronous Output	G=VAR_GLOBAL
+++D=BOOL	N=G99AP03_NX_Unit_Message_Enabled_Status	AT=IOBus://unit#3/NX Unit Message Enabled Status	G=VAR_GLOBAL
+++D=ARRAY[0..3] OF BYTE	N=Serial_Input_Data_01	AT=IOBus://unit#3/Ch1 Input Data 01	G=VAR_GLOBAL
+++D=ARRAY[0..3] OF BYTE	N=Serial_Input_Data_02	AT=IOBus://unit#3/Ch1 Input Data 02	G=VAR_GLOBAL
+++D=ARRAY[0..3] OF BYTE	N=Serial_Input_Data_03	AT=IOBus://unit#3/Ch1 Input Data 03	G=VAR_GLOBAL
+++D=ARRAY[0..3] OF BYTE	N=Serial_Input_Data_04	AT=IOBus://unit#3/Ch1 Input Data 04	G=VAR_GLOBAL
+++D=ARRAY[0..3] OF BYTE	N=Serial_Input_Data_05	AT=IOBus://unit#3/Ch1 Input Data 05	G=VAR_GLOBAL
+++D=UINT	N=Serial_Input_Data_Length	AT=IOBus://unit#3/Ch1 Input Data Length	G=VAR_GLOBAL
+++D=WORD	N=Serial_Input_Data_Type	AT=IOBus://unit#3/Ch1 Input Data Type	G=VAR_GLOBAL
+++D=USINT	N=Serial_Input_SID	AT=IOBus://unit#3/Ch1 Input SID	G=VAR_GLOBAL
+++D=USINT	N=Serial_Input_SID_Response	AT=IOBus://unit#3/Ch1 Input SID Response	G=VAR_GLOBAL
+++D=ARRAY[0..3] OF BYTE	N=Serial_Output_Data_01	AT=IOBus://unit#3/Ch1 Output Data 01	G=VAR_GLOBAL
+++D=ARRAY[0..3] OF BYTE	N=Serial_Output_Data_02	AT=IOBus://unit#3/Ch1 Output Data 02	G=VAR_GLOBAL
+++D=ARRAY[0..3] OF BYTE	N=Serial_Output_Data_03	AT=IOBus://unit#3/Ch1 Output Data 03	G=VAR_GLOBAL
+++D=ARRAY[0..3] OF BYTE	N=Serial_Output_Data_04	AT=IOBus://unit#3/Ch1 Output Data 04	G=VAR_GLOBAL
+++D=ARRAY[0..3] OF BYTE	N=Serial_Output_Data_05	AT=IOBus://unit#3/Ch1 Output Data 05	G=VAR_GLOBAL
+++D=UINT	N=Serial_Output_Data_Length	AT=IOBus://unit#3/Ch1 Output Data Length	G=VAR_GLOBAL
+++D=WORD	N=Serial_Output_Data_Type	AT=IOBus://unit#3/Ch1 Output Data Type	G=VAR_GLOBAL
+++D=USINT	N=Serial_Output_SID	AT=IOBus://unit#3/Ch1 Output SID	G=VAR_GLOBAL
+++D=USINT	N=Serial_Output_SID_Response	AT=IOBus://unit#3/Ch1 Output SID Response	G=VAR_GLOBAL

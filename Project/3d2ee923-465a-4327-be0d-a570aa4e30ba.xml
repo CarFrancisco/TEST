@@ -1,0 +1,12 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Input	Ord=0	G=VAR_INPUT	Com=Input value, if 0 : Down, if 1 : Up
+++D=BOOL	N=Clock	E=UpDirection	Ord=1	G=VAR_INPUT	Com=Each rising flag, count up if input = 1 or count down if input = 0
+++D=BOOL	N=Enabled	Ord=2	G=VAR_INPUT	Com=Enabled counter
+++D=BOOL	N=Reset	Ord=3	G=VAR_INPUT	Com=Reset counter to 0
+++D=INT	N=PV	Ord=4	G=VAR_INPUT	Com=Preset value
+++D=BOOL	N=Q	Ord=5	G=VAR_OUTPUT	Com=Counter output
+++D=INT	N=CV	Ord=6	G=VAR_OUTPUT	Com=Counter value
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

@@ -1,0 +1,28 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=REAL	N=Accu_DiffTemperature	G=VAR
+++D=REAL	N=AccuTemp_HysteresisHigh	G=VAR
+++D=REAL	N=AccuTemp_HysteresisLow	G=VAR
+++D=BOOL	N=AccuTemp_Decr	G=VAR
+++D=BOOL	N=AccuTemp_Incr	G=VAR
+++D=REAL	N=AccOldTemperature	G=VAR
+++D=TON	N=Timer_AccuTemp_Off	G=VAR
+++D=TON	N=Timer_AccuTemp_On	G=VAR
+++D=BOOL	N=Run	G=VAR	Com=Verin soft is running
+++D=REAL	N=TempTol_Neg	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
+++D=THE\ZONE	N=MyZone	Ord=1	G=VAR_IN_OUT
+++D=BOOL	N=Activate	Ord=2	G=VAR_INPUT	Com=Active the cylinder
+++D=BOOL	N=Enabled	Ord=3	G=VAR_INPUT
+++D=INT	N=Mesured_Value	Ord=4	G=VAR_INPUT
+++D=REAL	N=Setpoint	Ord=5	G=VAR_INPUT
+++D=REAL	N=TempMax	Ord=6	G=VAR_INPUT
+++D=REAL	N=TempTol	Ord=7	G=VAR_INPUT	Com=Tolerance of temperature
+++D=BOOL	N=Heating	Ord=8	G=VAR_OUTPUT
+++D=REAL	N=Actual_Temperature	Ord=9	G=VAR_OUTPUT
+++D=BOOL	N=Temp_OverTemp	Ord=10	G=VAR_OUTPUT
+++D=BOOL	N=Temp_TooHot	Ord=11	G=VAR_OUTPUT
+++D=BOOL	N=Temp_TooCold	Ord=12	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
