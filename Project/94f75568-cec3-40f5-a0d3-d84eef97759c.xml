@@ -4,7 +4,7 @@ _EN=Variables
 ++D=BOOL	N=Run	G=VAR
 +GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
 ++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
-++D=THE\FLASHLAMP	N=FlashLamp	Ord=1	G=VAR_IN_OUT
+++D=THE\FLASHLAMP	N=myFlashLamp	Ord=1	G=VAR_IN_OUT
 ++D=BOOL	N=Active	Ord=2	G=VAR_INPUT
 ++D=SINT	N=Rank	IV=113	Ord=3	G=VAR_INPUT
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

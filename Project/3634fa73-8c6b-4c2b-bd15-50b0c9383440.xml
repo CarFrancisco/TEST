@@ -13,6 +13,7 @@ _EN=Variables
 ++D=THE\BUZZER	N=Buzzer	R=1	G=VAR_GLOBAL
 ++D=THE\SCREEN	N=HMI	R=1	G=VAR_GLOBAL	Com=Link between PLC and NA
 ++D=THE\INVERTER	N=Inv_M40_Motor	G=VAR_GLOBAL	Com=Second device - 2 outputs
+++D=THE\FORCE	N=Force_LoadCell	G=VAR_GLOBAL	Com=Load cell datas
 ++D=THE\PROD	N=Prod	R=1	G=VAR_GLOBAL
 ++D=THE\SENSOR	N=Sensor_1	G=VAR_GLOBAL	Com=Sensor object 1
 ++D=THE\SENSOR	N=Sensor_2	G=VAR_GLOBAL	Com=Sensor object 2

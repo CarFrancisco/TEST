@@ -9,7 +9,7 @@ End Module</HiddenFooter><HiddenHeader>Public Module S_Startup&#xD;
 '*		Variables to change depending on the machine:&#xD;
 		#Const PCS = False&#xD;
 		#Const Metal = False&#xD;
-		Private Const IP_ADDR_END As UShort = 100&#xD;
+		Private Const IP_ADDR_END As UShort = 100	' IP adresse of the master NA (Only the last node)&#xD;
 '*&#xD;
 '*		Description :&#xD;
 '*		Global configuration of the HMI at startup&#xD;

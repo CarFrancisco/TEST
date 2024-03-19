@@ -7,12 +7,21 @@
       <ExecutionConditionSiouCpuUnit CJUnitTaskNo="" />
     </ExecutionConditionCJUnit>
   </GeneralSettingsData>
-  <Programs />
+  <Programs>
+    <AssociatedProgramData ProgramName="Buzzer_and_FlashLamp" InstanceName="Buzzer_and_FlashLamp" IniFileTrackingId="5219055700de4bb691a7e72e66f9d4d9" StartupSetting="TRUE" SequenceNumber="1" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="Pneumatic" InstanceName="Pneumatic" IniFileTrackingId="8b65a4200afc4c189e3a001c4bae2a9d" StartupSetting="TRUE" SequenceNumber="2" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="Serial" InstanceName="Serial" IniFileTrackingId="7e074c1d9dad49f4a2ac85c67ab83cb4" StartupSetting="TRUE" SequenceNumber="3" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="Sensor" InstanceName="Sensor" IniFileTrackingId="c343cb47e9614bbb9d5394275414e589" StartupSetting="TRUE" SequenceNumber="4" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="Sysmetric" InstanceName="Sysmetric" IniFileTrackingId="131fc7e0f0c8405090f3b2c625149ff4" StartupSetting="TRUE" SequenceNumber="5" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="TimeStamp" InstanceName="TimeStamp" IniFileTrackingId="3b3e642eaf3a40f2b4d2362b7e05c739" StartupSetting="TRUE" SequenceNumber="6" IsDebugProgram="false" />
+    <AssociatedProgramData ProgramName="Traversing" InstanceName="Traversing" IniFileTrackingId="81b8eee725974e989eb05a88cbb14373" StartupSetting="TRUE" SequenceNumber="7" IsDebugProgram="false" />
+  </Programs>
   <RefreshUnitIds>
     <RefreshUnitId RefreshUnitId="26722b22-f9cd-44ab-9246-d28fd46e1665" />
     <RefreshUnitId RefreshUnitId="e431a163-5a5a-429f-a852-b9b12968d7f7" />
     <RefreshUnitId RefreshUnitId="0af983ab-5e0b-40bf-a77b-6e71541d0e61" />
     <RefreshUnitId RefreshUnitId="7c6ac62e-51a8-4772-85b8-47369a945107" />
+    <RefreshUnitId RefreshUnitId="d1d500ad-4e14-4a17-8284-54bece1d17be" />
   </RefreshUnitIds>
   <TaskInterfaceVariables version="1" />
 </data>
