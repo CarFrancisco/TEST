@@ -1,0 +1,1 @@
+﻿{"CLs":[{"__type":"FB","In":[{"__type":"PRM","Arg":"MySAV","IO":true,"Type":"THE\\SAV","Var":""},{"__type":"PF","Arg":"Enabled"}],"Ix":2,"Name":"HMI_SAV","Out":[{"__type":"PRM","Arg":"MySAV","IO":true,"Ix":1,"Type":"THE\\SAV","Var":""},{"__type":"PF","Arg":"ENO"}],"UD":true,"Var":"ConfigSAV"}],"LRI":3,"RRI":4,"VLs":[]}

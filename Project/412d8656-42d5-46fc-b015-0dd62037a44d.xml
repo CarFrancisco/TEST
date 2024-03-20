@@ -1,0 +1,7 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=HMI_Config	N=ScreenConfig	G=VAR
+++D=HMI_SAV	N=ConfigSAV	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=THE\SCREEN	N=HMI	G=VAR_EXTERNAL
