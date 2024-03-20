@@ -4,6 +4,7 @@ _EN=Variables
 ++D=BOOL	N=Info_General	G=VAR_GLOBAL	Com=Rung with general information about an object
 ++D=BOOL	N=Info_Struct	G=VAR_GLOBAL	Com=Rung with information on object structure
 ++D=BOOL	N=Info_IOmap	G=VAR_GLOBAL	Com=Information about I/O map
+++D=BOOL	N=Info_Retain	G=VAR_GLOBAL	Com=This object must be retain!
 ++D=BOOL	N=Info_ToDo	G=VAR_GLOBAL	Com=To do....
 ++D=BOOL	N=Commissioning	G=VAR_GLOBAL	Com=Commissioning order
 ++D=BOOL	N=T_100ms	G=VAR_GLOBAL	Com=Flag 100ms
@@ -16,6 +17,7 @@ _EN=Variables
 ++D=THE\INVERTER	N=Inv_M40_Motor	G=VAR_GLOBAL	Com=Second device - 2 outputs
 ++D=THE\FORCE	N=Force_LoadCell	G=VAR_GLOBAL	Com=Load cell datas
 ++D=THE\PROD	N=Prod	R=1	G=VAR_GLOBAL
+++D=THE\SAV	N=SAV	R=1	G=VAR_GLOBAL	Com=SAV manager
 ++D=THE\SENSOR	N=Sensor_1	G=VAR_GLOBAL	Com=Sensor object 1
 ++D=THE\SENSOR	N=Sensor_2	G=VAR_GLOBAL	Com=Sensor object 2
 ++D=THE\SENSOR	N=Sensor_3	G=VAR_GLOBAL	Com=Sensor object 3

@@ -4,8 +4,12 @@
     <MappedVariableId PortId="127544eb-1a13-46d6-992f-41808ac51ba4">
       <MappedVariable VariableId="8cfd0cf7-4ebd-46db-8b17-3f2e2f1813d2" />
     </MappedVariableId>
+    <MappedVariableId PortId="6743dda4-bd75-4de5-8fe2-8ebf2102468b">
+      <MappedVariable VariableId="a6567416-bde5-428d-8fc2-a4245986b32a" />
+    </MappedVariableId>
   </MappedVariableIds>
   <VariableTableTrackingIds>
     <VariableTableTrackingId VariableId="8cfd0cf7-4ebd-46db-8b17-3f2e2f1813d2" VariableTableTrackingId="a015b81c-fdae-432c-a947-9bd45eb30f3d" />
+    <VariableTableTrackingId VariableId="a6567416-bde5-428d-8fc2-a4245986b32a" VariableTableTrackingId="a015b81c-fdae-432c-a947-9bd45eb30f3d" />
   </VariableTableTrackingIds>
 </data>
