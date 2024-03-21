@@ -374,7 +374,7 @@
                         <AccessInfos />
                         <ChildEntities />
                       </Entity>
-                      <Entity type="Variables" subtype="Ladder" id="e383ab15-a0e0-4f62-afc7-abe8efa37480" name="Variables" version="0" dateCreated="03/13/2024 16:09:12" dateLastModified="03/19/2024 13:36:56" trackingId="e211643d-5eac-4efa-a936-2fa7a4a56836" hash="7a9627e2fbd453bf3e3c497ed4838a7d">
+                      <Entity type="Variables" subtype="Ladder" id="e383ab15-a0e0-4f62-afc7-abe8efa37480" name="Variables" version="0" dateCreated="03/13/2024 16:09:12" dateLastModified="03/21/2024 16:50:40" trackingId="e211643d-5eac-4efa-a936-2fa7a4a56836" hash="83c88b2ed4215c1b92c54bc582fd8078">
                         <AccessInfos />
                         <ChildEntities>
                           <Entity type="SourceHolder" subtype="" id="de77591e-1f0b-4e1a-b958-11a328904c71" name="Source" version="0" dateCreated="03/13/2024 16:09:12" trackingId="f8fde76d-99ee-4d65-93b9-9afb008b323f">
@@ -383,7 +383,7 @@
                           </Entity>
                         </ChildEntities>
                       </Entity>
-                      <Entity type="PouBody" subtype="Ladder" id="0571fca4-7d25-498b-a0c2-fb8e30ed85f4" name="Config" version="0" dateCreated="03/13/2024 16:09:12" dateLastModified="03/19/2024 13:36:56" trackingId="2254f9e6-6c7e-455b-9213-c17b25e07c0c" DN="Config" hash="491fe2340645ce9fed1f99c3e4af4f73">
+                      <Entity type="PouBody" subtype="Ladder" id="0571fca4-7d25-498b-a0c2-fb8e30ed85f4" name="Config" version="0" dateCreated="03/13/2024 16:09:12" dateLastModified="03/21/2024 16:50:40" trackingId="2254f9e6-6c7e-455b-9213-c17b25e07c0c" DN="Config" hash="7f660e73622a3315f26df9c52661a932">
                         <AccessInfos />
                         <ChildEntities>
                           <Entity type="SourceHolder" subtype="" id="a42e62ca-d5ab-425c-8f1c-fa525636e1bd" name="Source" version="0" dateCreated="03/13/2024 16:09:12" trackingId="d73fee10-518b-4945-943b-128c307a4c30">
@@ -608,14 +608,14 @@
                       </Entity>
                     </ChildEntities>
                   </Entity>
-                  <Entity type="Program" subtype="MultipartLadder" id="cfdb16e6-affc-4673-97a0-bf8a3284ce3e" name="HMI_Screen_and_button" version="0" dateCreated="03/19/2024 16:28:25" dateLastModified="03/20/2024 14:35:11" label="0.0.0" author="ClP" trackingId="ad61b3fb-f8d5-45cf-8969-af6c008978a6" DN="HMI_Screen_and_button">
+                  <Entity type="Program" subtype="MultipartLadder" id="cfdb16e6-affc-4673-97a0-bf8a3284ce3e" name="HMI_Screen_and_button" version="0" dateCreated="03/19/2024 16:28:25" dateLastModified="03/21/2024 16:50:40" label="0.0.0" author="ClP" trackingId="ad61b3fb-f8d5-45cf-8969-af6c008978a6" DN="HMI_Screen_and_button">
                     <AccessInfos />
                     <ChildEntities>
                       <Entity type="DebugProgramSetting" subtype="" id="5cbfbeba-6673-4900-bafa-726bfbaa63cf" name="DebugProgramSetting0.00" version="0" dateCreated="03/19/2024 16:28:25" dateLastModified="03/19/2024 17:30:51" trackingId="717e9510-d65e-4fd9-8e68-66ef5b632348" hash="1ba7c2b4868fa6051083bbf3011b231b">
                         <AccessInfos />
                         <ChildEntities />
                       </Entity>
-                      <Entity type="Variables" subtype="Ladder" id="412d8656-42d5-46fc-b015-0dd62037a44d" name="Variables" version="0" dateCreated="03/19/2024 16:28:25" dateLastModified="03/20/2024 15:16:00" trackingId="c162146b-3efc-4393-bee9-98ae41012bf4" hash="d92596d5c62b0824551ceb59ab79da01">
+                      <Entity type="Variables" subtype="Ladder" id="412d8656-42d5-46fc-b015-0dd62037a44d" name="Variables" version="0" dateCreated="03/19/2024 16:28:25" dateLastModified="03/21/2024 16:50:40" trackingId="c162146b-3efc-4393-bee9-98ae41012bf4" hash="097e5bcb2a88aed8b92ca1ad99b77698">
                         <AccessInfos />
                         <ChildEntities>
                           <Entity type="SourceHolder" subtype="" id="e6f5578a-0399-4843-a48c-6e0b7b4442d0" name="Source" version="0" dateCreated="03/19/2024 16:28:25" trackingId="8cd2331e-c884-49b0-8512-ba3c53474276">
@@ -645,6 +645,32 @@
                             <ChildEntities />
                           </Entity>
                           <Entity type="PouBodySourceHolder" subtype="" id="3e03a37f-d623-454a-829b-140d7a5c54ee" name="PouBodySourceHolder" version="0" dateCreated="03/20/2024 13:31:15" trackingId="d0538116-1759-4797-8608-aa4469fe132f">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                      <Entity type="PouBody" subtype="Ladder" id="5252a980-699e-484a-82b7-4bb262edc41a" name="Graph_Object" version="0" dateCreated="03/20/2024 15:23:24" dateLastModified="03/21/2024 16:50:40" trackingId="335d642b-c899-4119-a9f1-392fe583d00c" DN="Graph_Object" hash="ff8642c3d99eb823f8a4a9bda849ece0">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="SourceHolder" subtype="" id="a4a046ee-d814-4721-a565-cc017401f861" name="Source" version="0" dateCreated="03/20/2024 15:23:24" trackingId="03572731-fcb4-4126-a466-d5ce4c786117">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="PouBodySourceHolder" subtype="" id="8e9fb7fc-cf21-474d-9206-26bf8dabfbee" name="PouBodySourceHolder" version="0" dateCreated="03/20/2024 15:23:24" trackingId="556d9ab5-afe4-46a4-85e5-d0494417e10d">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                        </ChildEntities>
+                      </Entity>
+                      <Entity type="PouBody" subtype="Ladder" id="b3754034-dfcc-44f1-a104-62017af83afa" name="ButtonLight_Object" version="0" dateCreated="03/21/2024 11:33:31" dateLastModified="03/21/2024 16:50:40" trackingId="409b67a4-9029-4b0e-87ac-65ee456293fb" DN="ButtonLight_Object" hash="49aa5564136f9c5af22a066396b2959d">
+                        <AccessInfos />
+                        <ChildEntities>
+                          <Entity type="SourceHolder" subtype="" id="a942ba38-27bf-49cb-971d-df0fb9b100b4" name="Source" version="0" dateCreated="03/21/2024 11:33:31" trackingId="e58da5e3-7307-435a-b87c-3cdcca07dc76">
+                            <AccessInfos />
+                            <ChildEntities />
+                          </Entity>
+                          <Entity type="PouBodySourceHolder" subtype="" id="1cf2f77d-9067-4553-bee0-3051f1aec850" name="PouBodySourceHolder" version="0" dateCreated="03/21/2024 11:33:31" trackingId="48897cfd-500a-4af3-aec6-8c79addd298e">
                             <AccessInfos />
                             <ChildEntities />
                           </Entity>
@@ -1834,7 +1860,7 @@
                   <Entity type="FunctionBlock" subtype="Ladder" id="8bed16cb-420c-4d90-8b85-032d7366b0a7" name="Door_Zone" version="0" dateCreated="03/28/2022 08:45:23" dateLastModified="03/19/2024 13:36:56" label="4.0.0" author="PC" comment="Zone management with a door and a button.&#xD;&#xA;&#xD;&#xA;S04V00R00 - 2023.11.14 - PC&#xD;&#xA;- New namespace&#xD;&#xA;&#xD;&#xA;S01V01R00 - 2023.01.26 - PC&#xD;&#xA;- Take out the FB door order. It was not possible to open/close in commissioning&#xD;&#xA;&#xD;&#xA;S01V00R00 - 2022.04.30 - PC&#xD;&#xA;- Create FB" trackingId="22c46328-ec95-4908-bed8-46a1d8caf799" DN="Door_Zone">
                     <AccessInfos />
                     <ChildEntities>
-                      <Entity type="Variables" subtype="LadderFunctionBlock" id="95c441af-46e8-4be4-b9b7-ed5d611586ef" name="Variables" version="0" dateCreated="03/28/2022 08:45:23" dateLastModified="03/19/2024 13:36:56" trackingId="2ec01ca1-0fcb-4530-984b-df8b6075f067" hash="952a9f3314b04e9363b9abe80b86b65e">
+                      <Entity type="Variables" subtype="LadderFunctionBlock" id="95c441af-46e8-4be4-b9b7-ed5d611586ef" name="Variables" version="0" dateCreated="03/28/2022 08:45:23" dateLastModified="03/21/2024 16:50:40" trackingId="2ec01ca1-0fcb-4530-984b-df8b6075f067" hash="0a5ab828f105d1c7dfc2dfc56c4bc59d">
                         <AccessInfos />
                         <ChildEntities>
                           <Entity type="PouIFLibraryHolder" subtype="" id="33c99c72-3353-4740-bbd6-7c4be5da88ff" name="PouIFLibrary" version="NaN" dateCreated="03/28/2022 08:45:23" trackingId="59acf0ea-c19d-4447-8443-0f1ae1f07af1">
@@ -1847,7 +1873,7 @@
                           </Entity>
                         </ChildEntities>
                       </Entity>
-                      <Entity type="PouBody" subtype="Ladder" id="47c1a789-052f-46ff-afa4-f37f55822b30" name="LadderBody" version="0" dateCreated="03/28/2022 08:45:23" dateLastModified="03/19/2024 13:36:56" trackingId="616c233d-d99a-4e5b-a410-05aa303bcb8d" hash="612b7d0107931035ef8f2af735bb5385">
+                      <Entity type="PouBody" subtype="Ladder" id="47c1a789-052f-46ff-afa4-f37f55822b30" name="LadderBody" version="0" dateCreated="03/28/2022 08:45:23" dateLastModified="03/21/2024 16:50:40" trackingId="616c233d-d99a-4e5b-a410-05aa303bcb8d" hash="528088bc7a7f5b541107832ac8c41b6a">
                         <AccessInfos />
                         <ChildEntities>
                           <Entity type="SourceHolder" subtype="" id="101eb503-f6a1-450f-b5f3-33babc20d26f" name="Source" version="0" dateCreated="03/28/2022 08:45:23" trackingId="c43d6121-5e42-445a-8de1-ecbc1cae46b4">
@@ -3368,7 +3394,7 @@
                   <Entity type="FunctionBlock" subtype="Ladder" id="82a81d53-0dcb-42d1-a657-41eecbbaf366" name="HMI_ButtonLight" version="0" dateCreated="05/30/2018 17:36:36" dateLastModified="03/19/2024 13:36:56" label="4.0.0" author="PC" comment="With safety and slave button&#xD;&#xA;&#xD;&#xA;S04V00R00 - 2023.09.26 - PC&#xD;&#xA;- New namespace&#xD;&#xA;&#xD;&#xA;S01V02R00 - 2023.08.23 - PC&#xD;&#xA;- Take out the ES management&#xD;&#xA;&#xD;&#xA;S01V01R01 - 2023.02.14 - PC&#xD;&#xA;- When the ES button is pressed, blink at 200ms.&#xD;&#xA;&#xD;&#xA;S01V01R00 - 2022.05.11 - PC&#xD;&#xA;- Change strucutre for switch&#xD;&#xA;- Free coils when FB is disabled" trackingId="6a2df532-9a28-40d9-bd82-d471ebc7a8e5" DN="HMI_ButtonLight">
                     <AccessInfos />
                     <ChildEntities>
-                      <Entity type="Variables" subtype="LadderFunctionBlock" id="ee005aee-29b6-48a6-aba9-068d8899f0c1" name="Variables" version="0" dateCreated="05/30/2018 17:36:36" dateLastModified="03/19/2024 13:36:56" trackingId="6955c653-3b7c-4362-b29a-a80ff53e30ce" hash="c292a46e999f2eb85fc37ca1e98eda81">
+                      <Entity type="Variables" subtype="LadderFunctionBlock" id="ee005aee-29b6-48a6-aba9-068d8899f0c1" name="Variables" version="0" dateCreated="05/30/2018 17:36:36" dateLastModified="03/21/2024 16:50:40" trackingId="6955c653-3b7c-4362-b29a-a80ff53e30ce" hash="fb5c0600fc70ccb632e519305808b358">
                         <AccessInfos />
                         <ChildEntities>
                           <Entity type="PouIFLibraryHolder" subtype="" id="4ee05007-c344-40c6-bf7a-e8133847a1a0" name="PouIFLibrary" version="NaN" dateCreated="05/30/2018 17:36:36" trackingId="bd1e7b6c-2b21-4d82-851b-5e0b982bb209">
@@ -3381,7 +3407,7 @@
                           </Entity>
                         </ChildEntities>
                       </Entity>
-                      <Entity type="PouBody" subtype="Ladder" id="0deedcac-659b-4c2c-b81a-129671c4884f" name="LadderBody" version="0" dateCreated="05/30/2018 17:36:36" dateLastModified="03/19/2024 13:36:56" trackingId="08d0d22a-76de-40b9-a09c-846b924106b4" hash="5ccd4fd9ca5698ef45e26da01d3a29ea">
+                      <Entity type="PouBody" subtype="Ladder" id="0deedcac-659b-4c2c-b81a-129671c4884f" name="LadderBody" version="0" dateCreated="05/30/2018 17:36:36" dateLastModified="03/21/2024 16:50:40" trackingId="08d0d22a-76de-40b9-a09c-846b924106b4" hash="bfe128afd1937e129a154b08379d94af">
                         <AccessInfos />
                         <ChildEntities>
                           <Entity type="SourceHolder" subtype="" id="57722846-9231-4c9b-9696-08b22b1c7faf" name="Source" version="0" dateCreated="05/30/2018 17:36:36" trackingId="01f4c226-8aeb-41ab-8460-bf6ead3e7753">
@@ -3399,7 +3425,7 @@
                   <Entity type="FunctionBlock" subtype="Ladder" id="fc00f4c8-9181-4776-9592-9d866aecb717" name="HMI_ButtonLight_ES" version="0" dateCreated="05/30/2018 17:36:36" dateLastModified="03/19/2024 13:36:56" label="4.0.0" author="PC" comment="Emergency stop button configuration&#xD;&#xA;&#xD;&#xA;S04V00R00 - 2023.11.09 - PC&#xD;&#xA;- New namespace&#xD;&#xA;&#xD;&#xA;S01V00R00 - 2023.08.29 - PC&#xD;&#xA;- New FB" trackingId="4d7c9ad2-abe5-4a1c-8dfd-755a8bbbb016" DN="HMI_ButtonLight_ES">
                     <AccessInfos />
                     <ChildEntities>
-                      <Entity type="Variables" subtype="LadderFunctionBlock" id="b45ef637-1d42-4bb5-9742-2fefc5f20393" name="Variables" version="0" dateCreated="05/30/2018 17:36:36" dateLastModified="03/19/2024 13:36:56" trackingId="bfaa005b-fefd-4d8f-bbe6-acbf2f064bf5" hash="ce538edda81a6fea73145fd8dc89eb37">
+                      <Entity type="Variables" subtype="LadderFunctionBlock" id="b45ef637-1d42-4bb5-9742-2fefc5f20393" name="Variables" version="0" dateCreated="05/30/2018 17:36:36" dateLastModified="03/21/2024 16:50:40" trackingId="bfaa005b-fefd-4d8f-bbe6-acbf2f064bf5" hash="4fef90440cfe0eb2afa4611a314e4094">
                         <AccessInfos />
                         <ChildEntities>
                           <Entity type="PouIFLibraryHolder" subtype="" id="f0ad4a98-2c7b-4800-9ec6-dad26a5bea01" name="PouIFLibrary" version="NaN" dateCreated="05/30/2018 17:36:36" trackingId="c7737332-687a-436d-bf2a-f0f0b5e40623">
@@ -3412,7 +3438,7 @@
                           </Entity>
                         </ChildEntities>
                       </Entity>
-                      <Entity type="PouBody" subtype="Ladder" id="9a3440b0-415b-456b-832f-ee35d653631f" name="LadderBody" version="0" dateCreated="05/30/2018 17:36:36" dateLastModified="03/19/2024 13:36:56" trackingId="35e961b0-7b84-4914-9fe1-a288ef713222" hash="566497ddff36dc7080207a640532756b">
+                      <Entity type="PouBody" subtype="Ladder" id="9a3440b0-415b-456b-832f-ee35d653631f" name="LadderBody" version="0" dateCreated="05/30/2018 17:36:36" dateLastModified="03/21/2024 16:50:40" trackingId="35e961b0-7b84-4914-9fe1-a288ef713222" hash="db989d3d1e60a51d65309b4431499743">
                         <AccessInfos />
                         <ChildEntities>
                           <Entity type="SourceHolder" subtype="" id="03be93c0-73c3-4332-a8f3-91f7ab7ec2dd" name="Source" version="0" dateCreated="05/30/2018 17:36:36" trackingId="f2fa8590-7dae-4cee-80e6-089a329b4ab9">
@@ -3430,7 +3456,7 @@
                   <Entity type="FunctionBlock" subtype="Ladder" id="20a49a5f-3a2a-4a6f-941b-e90c6cd11a9e" name="HMI_ButtonLight_Set" version="0" dateCreated="05/30/2018 17:36:36" dateLastModified="03/19/2024 13:36:56" label="4.0.0" author="PC" comment="Set/reset button configuration&#xD;&#xA;&#xD;&#xA;S04V00R00 - 2023.11.09 - PC&#xD;&#xA;- New namespace&#xD;&#xA;&#xD;&#xA;S01V00R00 - 2023.08.29 - PC&#xD;&#xA;- New FB" trackingId="98ebe9c6-9689-430a-a19c-277ec8a9245c" DN="HMI_ButtonLight_Set">
                     <AccessInfos />
                     <ChildEntities>
-                      <Entity type="Variables" subtype="LadderFunctionBlock" id="7e37c75f-c610-410f-b249-cedbe783305e" name="Variables" version="0" dateCreated="05/30/2018 17:36:36" dateLastModified="03/19/2024 13:36:56" trackingId="95efcf67-72b1-4bff-8a20-ac215918a414" hash="58fa84f129c24146c3400d818c657eb1">
+                      <Entity type="Variables" subtype="LadderFunctionBlock" id="7e37c75f-c610-410f-b249-cedbe783305e" name="Variables" version="0" dateCreated="05/30/2018 17:36:36" dateLastModified="03/21/2024 16:50:40" trackingId="95efcf67-72b1-4bff-8a20-ac215918a414" hash="495f5e57a4d2bbfbbd0ebade0b83e518">
                         <AccessInfos />
                         <ChildEntities>
                           <Entity type="PouIFLibraryHolder" subtype="" id="ebb2a7b2-730c-4f29-9b80-054e04fafe22" name="PouIFLibrary" version="NaN" dateCreated="05/30/2018 17:36:36" trackingId="02deb725-cb4c-4841-82f4-e4fe65fdfc24">
@@ -3443,7 +3469,7 @@
                           </Entity>
                         </ChildEntities>
                       </Entity>
-                      <Entity type="PouBody" subtype="Ladder" id="1c6bfc0e-560b-4cd3-b815-a92b36124afa" name="LadderBody" version="0" dateCreated="05/30/2018 17:36:36" dateLastModified="03/19/2024 13:36:56" trackingId="e10117a3-b8ff-4319-8532-2df75d08ae5b" hash="56c46c1819069d6ba9080fb435138396">
+                      <Entity type="PouBody" subtype="Ladder" id="1c6bfc0e-560b-4cd3-b815-a92b36124afa" name="LadderBody" version="0" dateCreated="05/30/2018 17:36:36" dateLastModified="03/21/2024 16:50:40" trackingId="e10117a3-b8ff-4319-8532-2df75d08ae5b" hash="b4df9a7f8293f31df5176c9ff6e13958">
                         <AccessInfos />
                         <ChildEntities>
                           <Entity type="SourceHolder" subtype="" id="8ff182d0-8ba5-4401-b863-534316ce1ce8" name="Source" version="0" dateCreated="05/30/2018 17:36:36" trackingId="9bed4c27-56fe-44d6-a221-459a3201489e">
@@ -3461,7 +3487,7 @@
                   <Entity type="FunctionBlock" subtype="Ladder" id="ea497f1b-ce1b-4e86-83a3-b9fea7bdfe32" name="HMI_ButtonLight_Set_2x" version="0" dateCreated="05/30/2018 17:36:36" dateLastModified="03/19/2024 13:36:56" label="4.0.0" author="PC" comment="Set/reset button configuration for two machine&#xD;&#xA;&#xD;&#xA;S04V00R00 - 2023.11.09 - PC&#xD;&#xA;- New namespace&#xD;&#xA;&#xD;&#xA;S01V00R00 - 2023.08.29 - PC&#xD;&#xA;- New FB" trackingId="878343b5-4a7c-4ae6-a042-f8f3f99a965d" DN="HMI_ButtonLight_Set_2x">
                     <AccessInfos />
                     <ChildEntities>
-                      <Entity type="Variables" subtype="LadderFunctionBlock" id="d4791062-dc11-4165-8705-ac57a1143374" name="Variables" version="0" dateCreated="05/30/2018 17:36:36" dateLastModified="03/19/2024 13:36:56" trackingId="a4e7448d-da83-4b3b-82e3-de6d95647657" hash="44e47017d9c8299a733a72253714239c">
+                      <Entity type="Variables" subtype="LadderFunctionBlock" id="d4791062-dc11-4165-8705-ac57a1143374" name="Variables" version="0" dateCreated="05/30/2018 17:36:36" dateLastModified="03/21/2024 16:50:40" trackingId="a4e7448d-da83-4b3b-82e3-de6d95647657" hash="05e6f9826921ab8570a3b6268aa68f88">
                         <AccessInfos />
                         <ChildEntities>
                           <Entity type="PouIFLibraryHolder" subtype="" id="f66856cc-ac8c-4611-9d92-27f34888463f" name="PouIFLibrary" version="NaN" dateCreated="05/30/2018 17:36:36" trackingId="be5ba2b4-15d5-46b3-8eb6-c38719ffeb38">
@@ -3474,7 +3500,7 @@
                           </Entity>
                         </ChildEntities>
                       </Entity>
-                      <Entity type="PouBody" subtype="Ladder" id="9e3f573c-6357-4d1b-90e3-6e48e130d25b" name="LadderBody" version="0" dateCreated="05/30/2018 17:36:36" dateLastModified="03/19/2024 13:36:56" trackingId="7876b2c5-aa75-48b7-ad88-39ea8668754e" hash="37cf10d306a20233ea9d9d00a7689634">
+                      <Entity type="PouBody" subtype="Ladder" id="9e3f573c-6357-4d1b-90e3-6e48e130d25b" name="LadderBody" version="0" dateCreated="05/30/2018 17:36:36" dateLastModified="03/21/2024 16:50:40" trackingId="7876b2c5-aa75-48b7-ad88-39ea8668754e" hash="bcfd36d22e2686de7b20722648e19bb2">
                         <AccessInfos />
                         <ChildEntities>
                           <Entity type="SourceHolder" subtype="" id="06ff78d8-55c2-4e39-84b0-0ea55e95be87" name="Source" version="0" dateCreated="05/30/2018 17:36:36" trackingId="80356902-9a32-44a3-99d9-b07bf62f3e5e">
@@ -3492,7 +3518,7 @@
                   <Entity type="FunctionBlock" subtype="Ladder" id="cd2267d7-91ae-42aa-b519-4267ed72df56" name="HMI_ButtonLight_Slave" version="0" dateCreated="05/30/2018 17:36:36" dateLastModified="03/19/2024 13:36:56" label="4.0.0" author="PC" comment="S04V00R00 - 2023.11.09 - PC&#xD;&#xA;- New namespace&#xD;&#xA;&#xD;&#xA;S01V01R00 - 2022.05.11 - PC&#xD;&#xA;- Change strucutre for switch&#xD;&#xA;- Free coils when FB is disabled" trackingId="a1bc515d-2917-4b01-82ad-e261fdc008db" DN="HMI_ButtonLight_Slave">
                     <AccessInfos />
                     <ChildEntities>
-                      <Entity type="Variables" subtype="LadderFunctionBlock" id="b84c7a96-3679-4f72-8437-1d74e5fec3fb" name="Variables" version="0" dateCreated="05/30/2018 17:36:36" dateLastModified="03/19/2024 13:36:56" trackingId="a50325bf-9f55-4e7d-9242-fe8e3d914ede" hash="95fb6f4e925549c7be69f6b0622a6a78">
+                      <Entity type="Variables" subtype="LadderFunctionBlock" id="b84c7a96-3679-4f72-8437-1d74e5fec3fb" name="Variables" version="0" dateCreated="05/30/2018 17:36:36" dateLastModified="03/21/2024 16:50:40" trackingId="a50325bf-9f55-4e7d-9242-fe8e3d914ede" hash="1a9d5cfa856c4d55d587d9924867f8fe">
                         <AccessInfos />
                         <ChildEntities>
                           <Entity type="PouIFLibraryHolder" subtype="" id="1187904c-0386-460a-b3ff-1df0a0064432" name="PouIFLibrary" version="NaN" dateCreated="05/30/2018 17:36:36" trackingId="9bc8dd22-f307-49a6-b603-5da5e7ec5b46">
@@ -3505,7 +3531,7 @@
                           </Entity>
                         </ChildEntities>
                       </Entity>
-                      <Entity type="PouBody" subtype="Ladder" id="cb47dce8-7991-4edb-a154-de584ea2745b" name="LadderBody" version="0" dateCreated="05/30/2018 17:36:36" dateLastModified="03/19/2024 13:36:56" trackingId="9643fdcc-f4b8-4d5a-90dc-7151af43c2ba" hash="a60e195485660f715b06d32ef06e6fdb">
+                      <Entity type="PouBody" subtype="Ladder" id="cb47dce8-7991-4edb-a154-de584ea2745b" name="LadderBody" version="0" dateCreated="05/30/2018 17:36:36" dateLastModified="03/21/2024 16:50:40" trackingId="9643fdcc-f4b8-4d5a-90dc-7151af43c2ba" hash="22cd915721d642dd8e8a8d8b4b411133">
                         <AccessInfos />
                         <ChildEntities>
                           <Entity type="SourceHolder" subtype="" id="98897bb3-d6c8-45e7-a2eb-1bddc93fc434" name="Source" version="0" dateCreated="05/30/2018 17:36:36" trackingId="a8acfef7-1e0b-4255-89fb-d8025ad7740d">
@@ -3523,7 +3549,7 @@
                   <Entity type="FunctionBlock" subtype="Ladder" id="9159e817-32c8-45d9-8d97-02d2a27c9170" name="HMI_Switch_1ch" version="0" dateCreated="05/30/2018 17:36:36" dateLastModified="03/19/2024 13:36:56" label="4.0.0" author="PC" comment="Switch with two position&#xD;&#xA;&#xD;&#xA;S04V00R00 - 2023.09.26 - PC&#xD;&#xA;- New namespace&#xD;&#xA;&#xD;&#xA;S01V00R00 - 2022.05.11 - PC&#xD;&#xA;- Create FB" trackingId="8ed091c1-e0ef-489e-a9de-bc46b88da85a" DN="HMI_Switch_1ch">
                     <AccessInfos />
                     <ChildEntities>
-                      <Entity type="Variables" subtype="LadderFunctionBlock" id="458497a1-504f-4e6e-b3d7-5a3f769c0556" name="Variables" version="0" dateCreated="05/30/2018 17:36:36" dateLastModified="03/19/2024 13:36:56" trackingId="945e2c07-25b0-43ec-a89a-e54f3ab89cca" hash="4b65b5ac82087e9792e3a8cc7cbcf8c5">
+                      <Entity type="Variables" subtype="LadderFunctionBlock" id="458497a1-504f-4e6e-b3d7-5a3f769c0556" name="Variables" version="0" dateCreated="05/30/2018 17:36:36" dateLastModified="03/21/2024 16:50:40" trackingId="945e2c07-25b0-43ec-a89a-e54f3ab89cca" hash="64af66a36cade0f366e256a5f20020e9">
                         <AccessInfos />
                         <ChildEntities>
                           <Entity type="PouIFLibraryHolder" subtype="" id="ccbf2bc5-7efb-4e07-839a-4bbce0f47f4f" name="PouIFLibrary" version="NaN" dateCreated="05/30/2018 17:36:36" trackingId="ee4cbbd2-2871-4246-972d-6dd62e8d26d1">
@@ -3536,7 +3562,7 @@
                           </Entity>
                         </ChildEntities>
                       </Entity>
-                      <Entity type="PouBody" subtype="Ladder" id="04092f28-ba97-459e-acfc-3725a1d80cfe" name="LadderBody" version="0" dateCreated="05/30/2018 17:36:36" dateLastModified="03/19/2024 13:36:56" trackingId="6389aaba-5ba8-412f-9fd8-ba597a51b905" hash="d8ad2be148835c7f1fef635f4fb1456f">
+                      <Entity type="PouBody" subtype="Ladder" id="04092f28-ba97-459e-acfc-3725a1d80cfe" name="LadderBody" version="0" dateCreated="05/30/2018 17:36:36" dateLastModified="03/21/2024 16:50:40" trackingId="6389aaba-5ba8-412f-9fd8-ba597a51b905" hash="b96ed269fd014d0dd24fd2e442d48973">
                         <AccessInfos />
                         <ChildEntities>
                           <Entity type="SourceHolder" subtype="" id="b0a7f566-b7d0-436c-bd77-822f2434f106" name="Source" version="0" dateCreated="05/30/2018 17:36:36" trackingId="20b790ad-e5ea-4cb3-b8e3-0439f00a36e3">
@@ -3554,7 +3580,7 @@
                   <Entity type="FunctionBlock" subtype="Ladder" id="6fad368a-d15c-4e03-bad3-57990faae653" name="HMI_Switch_2ch" version="0" dateCreated="05/30/2018 17:36:36" dateLastModified="03/19/2024 13:36:56" label="4.0.0" author="PC" comment="Switch with two position&#xD;&#xA;&#xD;&#xA;S04V00R00 - 2023.09.26 - PC&#xD;&#xA;- New namespace&#xD;&#xA;&#xD;&#xA;S01V00R00 - 2022.05.11 - PC&#xD;&#xA;- Create FB" trackingId="89a64f56-7569-4339-b35f-c8e5c1a935f3" DN="HMI_Switch_2ch">
                     <AccessInfos />
                     <ChildEntities>
-                      <Entity type="Variables" subtype="LadderFunctionBlock" id="a569796e-0d3d-45e4-8796-6152c9c9ab42" name="Variables" version="0" dateCreated="05/30/2018 17:36:36" dateLastModified="03/19/2024 13:36:56" trackingId="01c35cc3-0b9b-499b-b736-01cb1292587d" hash="c6a546d6e8b54f8c8442e371d60bf83b">
+                      <Entity type="Variables" subtype="LadderFunctionBlock" id="a569796e-0d3d-45e4-8796-6152c9c9ab42" name="Variables" version="0" dateCreated="05/30/2018 17:36:36" dateLastModified="03/21/2024 16:50:40" trackingId="01c35cc3-0b9b-499b-b736-01cb1292587d" hash="99c58bd18cec9a58953a1f6eab1d824d">
                         <AccessInfos />
                         <ChildEntities>
                           <Entity type="PouIFLibraryHolder" subtype="" id="52a7a26c-bb16-41e0-a45c-52d12924c383" name="PouIFLibrary" version="NaN" dateCreated="05/30/2018 17:36:36" trackingId="5ee826c4-1890-4a07-b1fb-925373953602">
@@ -3567,7 +3593,7 @@
                           </Entity>
                         </ChildEntities>
                       </Entity>
-                      <Entity type="PouBody" subtype="Ladder" id="d4c09b04-9f05-4dca-a814-297bc58c6e8e" name="LadderBody" version="0" dateCreated="05/30/2018 17:36:36" dateLastModified="03/19/2024 13:36:56" trackingId="7af532f4-3a8a-4bcb-aeb8-b951977956b7" hash="55631e3cbba3b8d06d111d8650defd6f">
+                      <Entity type="PouBody" subtype="Ladder" id="d4c09b04-9f05-4dca-a814-297bc58c6e8e" name="LadderBody" version="0" dateCreated="05/30/2018 17:36:36" dateLastModified="03/21/2024 16:50:40" trackingId="7af532f4-3a8a-4bcb-aeb8-b951977956b7" hash="34034957ac29a82f8d566a88c7ed0405">
                         <AccessInfos />
                         <ChildEntities>
                           <Entity type="SourceHolder" subtype="" id="cce2cb14-5c8b-45fd-ade5-663e7ffe97b4" name="Source" version="0" dateCreated="05/30/2018 17:36:36" trackingId="c91b2f6d-cf8b-49bd-b69b-3b2798e74091">
@@ -3585,7 +3611,7 @@
                   <Entity type="FunctionBlock" subtype="Ladder" id="cc04d565-9314-4860-8b40-8de920c32d8a" name="HMI_Graph" version="0" dateCreated="11/05/2019 08:52:57" dateLastModified="03/19/2024 13:36:56" label="4.0.0" author="PC" comment="Define a new graph with user defined viewport.&#xD;&#xA;&#xD;&#xA;S04V00R00 - 2023.11.14 - PC&#xD;&#xA;- New namespace" trackingId="e73076d8-fe76-4eba-a79f-ed719efaed13" DN="HMI_Graph">
                     <AccessInfos />
                     <ChildEntities>
-                      <Entity type="Variables" subtype="LadderFunctionBlock" id="bbf2ae0d-0ff4-4c19-9296-67ac8e136eba" name="Variables" version="0" dateCreated="11/05/2019 08:52:57" dateLastModified="03/19/2024 13:36:56" trackingId="82e06fc0-ad56-4dd3-83e4-a70457d205d2" hash="15a39fc61ef991c2dc4e0196f8121915">
+                      <Entity type="Variables" subtype="LadderFunctionBlock" id="bbf2ae0d-0ff4-4c19-9296-67ac8e136eba" name="Variables" version="0" dateCreated="11/05/2019 08:52:57" dateLastModified="03/21/2024 16:50:40" trackingId="82e06fc0-ad56-4dd3-83e4-a70457d205d2" hash="50db7185e9f7eff593c498e344d18e56">
                         <AccessInfos />
                         <ChildEntities>
                           <Entity type="PouIFLibraryHolder" subtype="" id="176f64e6-60a9-49d2-a5d1-bec2b806f011" name="PouIFLibrary" version="NaN" dateCreated="11/05/2019 08:52:58" trackingId="74f319b8-d583-4911-8353-7e5cf1fbf3cf">
@@ -3598,7 +3624,7 @@
                           </Entity>
                         </ChildEntities>
                       </Entity>
-                      <Entity type="PouBody" subtype="Ladder" id="8c0da955-9709-4289-9df0-c076b634131e" name="LadderBody" version="0" dateCreated="11/05/2019 08:52:58" dateLastModified="03/19/2024 13:36:56" trackingId="614fe9c6-a05b-4dfa-a60b-7936a5d0d71d" hash="88e5ff85f6b08b11964ce66b21e28676">
+                      <Entity type="PouBody" subtype="Ladder" id="8c0da955-9709-4289-9df0-c076b634131e" name="LadderBody" version="0" dateCreated="11/05/2019 08:52:58" dateLastModified="03/21/2024 16:50:40" trackingId="614fe9c6-a05b-4dfa-a60b-7936a5d0d71d" hash="a12c57d52fe151f42835ed8e04bcb10e">
                         <AccessInfos />
                         <ChildEntities>
                           <Entity type="SourceHolder" subtype="" id="f461327a-f93a-4e55-8182-a67d4e157f3c" name="Source" version="0" dateCreated="11/05/2019 08:52:58" trackingId="90ca484b-956d-4ead-90a4-96389406a657">
@@ -3609,19 +3635,19 @@
                             <AccessInfos />
                             <ChildEntities />
                           </Entity>
-                          <Entity type="Inline" subtype="StructuredText" id="b41e6c8a-75b7-4008-94c6-42b238686c6c" name="868357f7-d1d4-4a70-88a9-477ebaee48f6" version="0" dateCreated="11/05/2019 15:20:14" dateLastModified="03/19/2024 13:36:56" trackingId="78b7d170-10c8-4326-add9-7aac66080fa4">
+                          <Entity type="Inline" subtype="StructuredText" id="b41e6c8a-75b7-4008-94c6-42b238686c6c" name="868357f7-d1d4-4a70-88a9-477ebaee48f6" version="0" dateCreated="11/05/2019 15:20:14" dateLastModified="03/21/2024 16:50:40" trackingId="78b7d170-10c8-4326-add9-7aac66080fa4">
                             <AccessInfos />
                             <ChildEntities />
                           </Entity>
-                          <Entity type="Inline" subtype="StructuredText" id="37396c6b-6093-4bfa-b2b9-7498431303cc" name="c8959bf3-a3dd-4529-ac35-934ada460426" version="0" dateCreated="05/27/2020 14:14:56" dateLastModified="03/19/2024 13:36:56" trackingId="44da0e87-4714-444a-bcb5-f655d11430e6">
+                          <Entity type="Inline" subtype="StructuredText" id="37396c6b-6093-4bfa-b2b9-7498431303cc" name="c8959bf3-a3dd-4529-ac35-934ada460426" version="0" dateCreated="05/27/2020 14:14:56" dateLastModified="03/21/2024 16:50:40" trackingId="44da0e87-4714-444a-bcb5-f655d11430e6">
                             <AccessInfos />
                             <ChildEntities />
                           </Entity>
-                          <Entity type="Inline" subtype="StructuredText" id="4f7ec4b7-8ba3-464a-a9bf-50a718540bbd" name="804964a9-a23a-4239-b559-c8b863a6fce3" version="0" dateCreated="05/28/2020 17:28:40" dateLastModified="03/19/2024 13:36:56" trackingId="09498cbb-03dd-4a63-bb0d-f52c65d586f0">
+                          <Entity type="Inline" subtype="StructuredText" id="4f7ec4b7-8ba3-464a-a9bf-50a718540bbd" name="804964a9-a23a-4239-b559-c8b863a6fce3" version="0" dateCreated="05/28/2020 17:28:40" dateLastModified="03/21/2024 16:50:40" trackingId="09498cbb-03dd-4a63-bb0d-f52c65d586f0">
                             <AccessInfos />
                             <ChildEntities />
                           </Entity>
-                          <Entity type="Inline" subtype="StructuredText" id="70e981ce-87ce-48d5-8590-7dc6abf8ed2f" name="59908e6b-0e17-40bb-b2fd-97794037ba02" version="0" dateCreated="05/29/2020 08:56:47" dateLastModified="03/19/2024 13:36:56" trackingId="0590b44a-53ed-4acd-abad-96b7b8ed40b7">
+                          <Entity type="Inline" subtype="StructuredText" id="70e981ce-87ce-48d5-8590-7dc6abf8ed2f" name="59908e6b-0e17-40bb-b2fd-97794037ba02" version="0" dateCreated="05/29/2020 08:56:47" dateLastModified="03/21/2024 16:50:40" trackingId="0590b44a-53ed-4acd-abad-96b7b8ed40b7">
                             <AccessInfos />
                             <ChildEntities />
                           </Entity>
@@ -6517,7 +6543,7 @@
                             <AccessInfos />
                             <ChildEntities />
                           </Entity>
-                          <Entity type="Inline" subtype="StructuredText" id="b57bee28-ef34-4645-8caa-02daa9b4f992" name="ad14018e-361e-403e-818c-f37a130a23dc" version="0" dateCreated="10/21/2022 08:43:48" dateLastModified="03/19/2024 13:36:56" trackingId="e5896f0e-65e8-43d0-b472-b20329cda3cc">
+                          <Entity type="Inline" subtype="StructuredText" id="b57bee28-ef34-4645-8caa-02daa9b4f992" name="ad14018e-361e-403e-818c-f37a130a23dc" version="0" dateCreated="10/21/2022 08:43:48" dateLastModified="03/21/2024 16:50:40" trackingId="e5896f0e-65e8-43d0-b472-b20329cda3cc">
                             <AccessInfos />
                             <ChildEntities />
                           </Entity>
@@ -6846,7 +6872,7 @@
                 <AccessInfos />
                 <ChildEntities />
               </Entity>
-              <Entity type="Variables" subtype="Global" id="3634fa73-8c6b-4c2b-bd15-50b0c9383440" name="Global Variables" version="0" dateCreated="03/19/2024 13:20:32" dateLastModified="03/20/2024 15:16:00" trackingId="791dbf16-4756-4ca6-9c33-60d379da68d7" DN="Global Variables" hash="9df7416f574ea5153ff7b8786ba2789c">
+              <Entity type="Variables" subtype="Global" id="3634fa73-8c6b-4c2b-bd15-50b0c9383440" name="Global Variables" version="0" dateCreated="03/19/2024 13:20:32" dateLastModified="03/21/2024 16:50:40" trackingId="791dbf16-4756-4ca6-9c33-60d379da68d7" DN="Global Variables" hash="75bb0ce919f24885c25b52697c3b81f4">
                 <AccessInfos />
                 <ChildEntities>
                   <Entity type="SourceHolder" subtype="" id="9c55adce-38ed-4afb-922e-b8418804b39f" name="Source" version="0" dateCreated="03/19/2024 13:20:32" trackingId="90e1ea41-943f-4e4d-92a2-a4a62418711e">
@@ -7320,7 +7346,7 @@
           </Entity>
         </ChildEntities>
       </Entity>
-      <Entity type="Device" subtype="NA" id="d5e85de9-9502-4c55-b1c6-becd93ae0a51" name="FB_NA" version="0" dateCreated="03/19/2024 14:41:31" dateLastModified="03/19/2024 15:01:26" trackingId="2d443abe-02f5-4182-948d-e88ad599f705" DN="FB_NA" hash="1153baba1b5286328427decb6a841e38" DHS="606758831f680451dea810589b6d5382" TH="35125bf57123daf7ccfdb6684686ae0c">
+      <Entity type="Device" subtype="NA" id="d5e85de9-9502-4c55-b1c6-becd93ae0a51" name="FB_NA" version="0" dateCreated="03/19/2024 14:41:31" dateLastModified="03/19/2024 15:01:26" trackingId="2d443abe-02f5-4182-948d-e88ad599f705" DN="FB_NA" hash="1153baba1b5286328427decb6a841e38" DHS="606758831f680451dea810589b6d5382" TH="838c3c3772063667975bb633ca556853">
         <AccessInfos />
         <ChildEntities>
           <Entity type="Watch" subtype="" id="9d22bf9a-5108-4184-85ac-068e4bee39be" name="Watch" version="0" dateCreated="03/19/2024 14:41:31" trackingId="2de7e13a-8e7a-4021-9a11-8b94238a09e6">
@@ -7512,7 +7538,7 @@
             <AccessInfos />
             <ChildEntities />
           </Entity>
-          <Entity type="GlobalSubroutinesGroupEntity" subtype="GlobalSubroutinesGroupEntitySubtype" id="7b55cae3-36a3-4bc6-a888-31ee5d437765" name="Global Subroutines" version="0" dateCreated="03/19/2024 14:41:31" dateLastModified="03/20/2024 15:21:40" trackingId="784e2177-9a5a-43bd-b928-14902d197028" DN="Global Subroutines">
+          <Entity type="GlobalSubroutinesGroupEntity" subtype="GlobalSubroutinesGroupEntitySubtype" id="7b55cae3-36a3-4bc6-a888-31ee5d437765" name="Global Subroutines" version="0" dateCreated="03/19/2024 14:41:31" dateLastModified="03/21/2024 16:50:40" trackingId="784e2177-9a5a-43bd-b928-14902d197028" DN="Global Subroutines">
             <AccessInfos />
             <ChildEntities>
               <Entity type="GlobalSubroutinesEntity" subtype="GlobalSubroutinesSubtype" id="e28233b8-de86-4f5a-84cf-29b6cd15fd65" name="S_Startup" version="0" dateCreated="03/19/2024 14:41:32" dateLastModified="03/19/2024 15:52:32" trackingId="5a9c0b49-c506-4d6a-9000-bd7fd89d7f37" DN="S_Startup" hash="aaa709707911084bc96fd3abad16ad61">

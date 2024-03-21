@@ -39,3 +39,4 @@ _EN=Variables
 ++D=BOOL	N=G99AP03_NX_Unit_Message_Enabled_Status	G=VAR_EXTERNAL
 ++D=THE\SERIAL	N=Serial_Device	G=VAR_EXTERNAL
 ++D=BOOL	N=Info_Struct	G=VAR_EXTERNAL	Com=Rung with information on object structure
+++D=BOOL	N=Info_General	G=VAR_EXTERNAL

@@ -16,6 +16,14 @@ _EN=Variables
 ++D=THE\SCREEN	N=HMI	R=1	G=VAR_GLOBAL	Com=Link between PLC and NA
 ++D=THE\INVERTER	N=Inv_M40_Motor	G=VAR_GLOBAL	Com=Second device - 2 outputs
 ++D=THE\FORCE	N=Force_LoadCell	G=VAR_GLOBAL	Com=Load cell datas
+++D=THE\GRAPH	N=Graph_Trend1	R=1	G=VAR_GLOBAL	Com=Trend 1
+++D=THE\HMI	N=HMI_Order1	R=1	G=VAR_GLOBAL	Com=Order 1 button
+++D=THE\HMI	N=HMI_Order2	R=1	G=VAR_GLOBAL	Com=Order 2 button
+++D=THE\HMI	N=HMI_Order3	R=1	G=VAR_GLOBAL	Com=Order 3 button
+++D=THE\HMI	N=HMI_ES	R=1	G=VAR_GLOBAL	Com=Emergency stop button
+++D=THE\HMI	N=HMI_Set	R=1	G=VAR_GLOBAL	Com=Set button
+++D=THE\HMI	N=HMI_Switch_TwoPos	R=1	G=VAR_GLOBAL	Com=Switch with two position
+++D=THE\HMI	N=HMI_Switch_ThreePos	R=1	G=VAR_GLOBAL	Com=Switch with three position
 ++D=THE\PROD	N=Prod	R=1	G=VAR_GLOBAL
 ++D=THE\SAV	N=SAV	R=1	G=VAR_GLOBAL	Com=SAV manager
 ++D=THE\SENSOR	N=Sensor_1	G=VAR_GLOBAL	Com=Sensor object 1
@@ -89,3 +97,4 @@ _EN=Variables
 ++D=BOOL	N=Force_Ch1_Hold_Value_Clear	AT=IOBus://unit#4/Ch1 Operation Command/Ch1 Hold Value Clear	G=VAR_GLOBAL
 ++D=UINT	N=Force_Command_SID	AT=IOBus://unit#4/Ch1 Calibration Command SID	G=VAR_GLOBAL	Com=Calibration command SID
 ++D=WORD	N=Force_Command	AT=IOBus://unit#4/Ch1 Calibration Command	G=VAR_GLOBAL	Com=Calibration command
+++D=BOOL	N=TestLamp	G=VAR_GLOBAL	Com=Force test lamp

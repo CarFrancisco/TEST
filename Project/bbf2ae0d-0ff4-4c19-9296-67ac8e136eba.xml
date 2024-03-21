@@ -10,9 +10,9 @@ _EN=Variables
 ++D=REAL	N=View_Low_Backup	G=VAR	Com=Backup value of input view low to detect an update
 +GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
 ++D=BOOL	N=ENO	Ord=0	RO=1	G=VAR_OUTPUT
-++D=THE\Graph	N=MyGraph	Ord=1	G=VAR_IN_OUT
+++D=THE\Graph	N=myGraph	Ord=1	G=VAR_IN_OUT
 ++D=BOOL	N=Enable	Ord=2	G=VAR_INPUT
-++D=BOOL	N=Start	Ord=3	G=VAR_INPUT
+++D=BOOL	N=Start	IV=True	Ord=3	G=VAR_INPUT
 ++D=REAL	N=Mesure	Ord=4	G=VAR_INPUT
 ++D=REAL	N=Mesure_max	Ord=5	G=VAR_INPUT	Com=Graphic maximum value [u]
 ++D=REAL	N=Mesure_min	Ord=6	G=VAR_INPUT	Com=Graphic minimum value [u]

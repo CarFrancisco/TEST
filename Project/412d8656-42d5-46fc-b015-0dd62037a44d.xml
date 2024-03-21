@@ -3,7 +3,63 @@ _EN=Variables
 +GN=VAR	GVT=DefaultGroup
 ++D=HMI_Config	N=ScreenConfig	G=VAR
 ++D=HMI_SAV	N=ConfigSAV	G=VAR
+++D=HMI_Graph	N=Config_Trend1	G=VAR
+++D=INT	N=AD_Input1	G=VAR
+++D=REAL	N=AD_Input_Real	G=VAR	Com=Real value o
+++D=REAL	N=myTrend	G=VAR
+++D=REAL	N=Pressure	G=VAR	Com=[0..800 bar]
+++D=REAL	N=Pressure_SP	G=VAR	Com=500 [bar]
+++D=REAL	N=Pressure_Tol	G=VAR	Com=50 [bar]
+++D=REAL	N=View_High	G=VAR	Com=High view range [bar]
+++D=REAL	N=View_Low	G=VAR	Com=Low view range [bar]
+++D=BOOL	N=OnMachineB	G=VAR	Com=Button is on machine A or B?
+++D=HMI_ButtonLight	N=Order1_OnMachineA_Cfg	G=VAR
+++D=HMI_ButtonLight	N=Order1_OnMachineB_Cfg	G=VAR
+++D=BOOL	N=DI_MachinaA_Btn1	G=VAR
+++D=BOOL	N=DI_MachinaB_Btn1	G=VAR
+++D=BOOL	N=DO_MachinaA_Lamp	G=VAR
+++D=BOOL	N=DO_MachinaB_Lamp	G=VAR
+++D=BOOL	N=DI_MachinaA_Btn	G=VAR
+++D=BOOL	N=DI_MachinaB_Btn	G=VAR
+++D=HMI_ButtonLight	N=Order2_OnMachineA_Cfg	G=VAR
+++D=HMI_ButtonLight_Slave	N=Order2_OnMachineB_Cfg	G=VAR
+++D=BOOL	N=DI_MachinaA_Btn2	G=VAR
+++D=BOOL	N=DO_MachinaA_Lamp2	G=VAR
+++D=BOOL	N=DI_MachinaB_Btn2	G=VAR
+++D=BOOL	N=DI_MachineA_Btn	G=VAR
+++D=BOOL	N=DO_MachineA_Lamp	G=VAR
+++D=BOOL	N=DI_MachineB_Btn	G=VAR
+++D=BOOL	N=DO_MachineB_Lamp	G=VAR
+++D=BOOL	N=DI_MachineA_Btn2	G=VAR
+++D=BOOL	N=DO_MachineA_Lamp2	G=VAR
+++D=BOOL	N=DO_MachineB_Lamp2	G=VAR
+++D=BOOL	N=DI_MachineB_Btn2	G=VAR
+++D=BOOL	N=sDI_ES	G=VAR
+++D=BOOL	N=sDI_Set	G=VAR
+++D=BOOL	N=DO_ES_Lamp	G=VAR
+++D=BOOL	N=DO_Set_Lamp	G=VAR
+++D=HMI_ButtonLight_ES	N=ES_Cfg	G=VAR
+++D=HMI_ButtonLight_Set	N=Set_Cfg	G=VAR
+++D=BOOL	N=S_Machine_ES	G=VAR
+++D=BOOL	N=S_Machine_Error	G=VAR
+++D=BOOL	N=S_Machine_NeedReset	G=VAR
+++D=HMI_Switch_1ch	N=Switch_1ch_Cfg	G=VAR
+++D=BOOL	N=DI_Switch	G=VAR
+++D=BOOL	N=DO_Switch_Lamp	G=VAR
+++D=BOOL	N=DI_Switch_L	G=VAR
+++D=BOOL	N=DI_Switch_R	G=VAR
+++D=HMI_Switch_2ch	N=Switch_2ch_Cfg	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=THE\SCREEN	N=HMI	G=VAR_EXTERNAL
 ++D=THE\SAV	N=SAV	G=VAR_EXTERNAL
 ++D=BOOL	N=Info_Retain	G=VAR_EXTERNAL
+++D=BOOL	N=Info_General	G=VAR_EXTERNAL
+++D=THE\GRAPH	N=Graph_Trend1	G=VAR_EXTERNAL
+++D=BOOL	N=Info_ToDo	G=VAR_EXTERNAL
+++D=THE\HMI	N=HMI_Order1	G=VAR_EXTERNAL
+++D=THE\HMI	N=HMI_Order2	G=VAR_EXTERNAL
+++D=BOOL	N=TestLamp	G=VAR_EXTERNAL	Com=Force test lamp
+++D=THE\HMI	N=HMI_ES	G=VAR_EXTERNAL
+++D=THE\HMI	N=HMI_Set	G=VAR_EXTERNAL
+++D=THE\HMI	N=HMI_Switch_TwoPos	G=VAR_EXTERNAL
+++D=THE\HMI	N=HMI_Switch_ThreePos	G=VAR_EXTERNAL
