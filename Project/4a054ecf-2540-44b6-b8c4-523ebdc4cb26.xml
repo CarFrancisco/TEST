@@ -18,3 +18,5 @@ _EN=Variables
 ++D=BOOL	N=Enabled	Ord=13	G=VAR_INPUT	Com=Use this load cell
 ++D=REAL	N=Max_Force	Ord=14	G=VAR_INPUT	Com=Maximum force of load cell [u]
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=DATE_AND_TIME	N=_CurrentTime	Const=1	G=VAR_EXTERNAL
+++D=THE\SCREEN	N=HMI	G=VAR_EXTERNAL

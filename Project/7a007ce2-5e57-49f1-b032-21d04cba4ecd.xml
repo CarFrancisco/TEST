@@ -175,6 +175,8 @@
       <DataType Name="Alarms" BaseType="THE\Force_Alarms" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="alarmes :" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
       <DataType Name="ForceFB" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Mesured weight [u]" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
       <DataType Name="ForceRate" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Relative weight [%]" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="LastCalibration_Date" BaseType="DATE_AND_TIME" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Date of the last calibration" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="LastCalibration_User" BaseType="STRING[50]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="User of the last calibration" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
     </DataType>
     <DataType Name="Force_Command" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="91" OffsetType="NJ">
       <DataType Name="CalibZero" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Order to make the zero reference" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
@@ -587,10 +589,10 @@
       <DataType Name="Buzzer" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Order to run the buzzer" OffsetChannel="0" OffsetBit="2" IsControllerDefinedType="false" Order="0" OffsetType="" />
       <DataType Name="DateAndTime" BaseType="THE\Screen_Time" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Date -" OffsetChannel="2" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
       <DataType Name="Users" BaseType="THE\Screen_Users" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Users -" OffsetChannel="20" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
-      <DataType Name="Language" BaseType="THE\Screen_Language" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Language -" OffsetChannel="30" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
-      <DataType Name="Recipe" BaseType="THE\Screen_Rcp" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Recipe -" OffsetChannel="36" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
-      <DataType Name="Unit" BaseType="THE\Screen_Unit" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Unit -" OffsetChannel="38" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
-      <DataType Name="WakeUp" BaseType="THE\Screen_WakeUp" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Unit -" OffsetChannel="40" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Language" BaseType="THE\Screen_Language" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Language -" OffsetChannel="80" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Recipe" BaseType="THE\Screen_Rcp" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Recipe -" OffsetChannel="86" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Unit" BaseType="THE\Screen_Unit" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Unit -" OffsetChannel="88" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="WakeUp" BaseType="THE\Screen_WakeUp" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Unit -" OffsetChannel="90" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
     </DataType>
     <DataType Name="Screen_Time" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="54" OffsetType="CJ">
       <DataType Name="Current" BaseType="DATE_AND_TIME" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Current time from NJ" OffsetChannel="0" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
@@ -602,6 +604,7 @@
       <DataType Name="Code" BaseType="STRING[6]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="User code (4 char)" OffsetChannel="0" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
       <DataType Name="Level" BaseType="USINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Level of user" OffsetChannel="6" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
       <DataType Name="Update" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Master change user" OffsetChannel="8" OffsetBit="0" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="CurrentUser" BaseType="STRING[50]" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Current user logged in NA" OffsetChannel="10" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
     </DataType>
     <DataType Name="Screen_Language" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="52" OffsetType="CJ">
       <DataType Name="Selected" BaseType="USINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Selected language" OffsetChannel="0" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
